@@ -1,0 +1,8 @@
+earlier_code,final_code,basis,recorded_evidence,status
+LC003,LC002,record audit,examination records of the two codes refer to the same person,merged before splitting
+LC022,LC021,clinic,the clinic confirmed that the CT and the PET/CT examinations belong to one patient,merged; clinically confirmed
+LC001,LC001,clinic,the two CT examinations belong to one patient,clinically confirmed
+LC002,LC002,clinic,the CT examinations belong to one patient,clinically confirmed
+LC012,LC012,clinic,the PET/CT and the CT examinations belong to one patient,clinically confirmed
+LC008,LC006,image-based,"vertebral shape similarity 0.83 (maximum over 163 different-person pairs 0.81; clinically confirmed same-person pairs 0.86-0.87); lung-volume difference 1.3%; consistent dynamics of a right-lung lesion over about two months",merged; not clinically confirmed
+LC009,LC007,image-based,"the two smallest left-lung volumes in the dataset (0.76 and 0.79 L); left-lung pathology in both examinations; 10-day interval",merged; not clinically confirmed

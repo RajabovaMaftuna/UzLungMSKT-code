@@ -1,0 +1,76 @@
+{
+ "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+ "torch": "2.14.1+cu130",
+ "input": [
+  1,
+  1,
+  96,
+  96,
+  96
+ ],
+ "models": {
+  "M1_unet3d_local": {
+   "model": "unet3d",
+   "params": 5646402,
+   "gflops_forward_96": 100.7,
+   "inference_ms_bf16": 20.6,
+   "train_step_s_bf16": 0.338,
+   "train_batch": 2,
+   "peak_vram_gb_train": 1.06
+  },
+  "M2_r2u3d_static_local": {
+   "model": "r2u3d_static",
+   "params": 3186802,
+   "gflops_forward_96": 273.3,
+   "inference_ms_bf16": 73.3,
+   "train_step_s_bf16": 0.998,
+   "train_batch": 2,
+   "peak_vram_gb_train": 3.17
+  },
+  "dicece_s42": {
+   "model": "r2u3d_dynamic",
+   "params": 1776706,
+   "gflops_forward_96": 104.8,
+   "inference_ms_bf16": 41.5,
+   "train_step_s_bf16": 0.239,
+   "train_batch": 2,
+   "peak_vram_gb_train": 1.65
+  },
+  "adaptive_s42": {
+   "model": "r2u3d_dynamic",
+   "params": 1776706,
+   "gflops_forward_96": 104.8,
+   "inference_ms_bf16": 41.1,
+   "train_step_s_bf16": 0.239,
+   "train_batch": 2,
+   "peak_vram_gb_train": 1.65
+  },
+  "M5_res2unet3d_local": {
+   "model": "res2unet3d",
+   "params": 5476926,
+   "gflops_forward_96": 89.4,
+   "inference_ms_bf16": 22.1,
+   "train_step_s_bf16": 0.347,
+   "train_batch": 2,
+   "peak_vram_gb_train": 1.2
+  },
+  "M6_unetr_local": {
+   "model": "unetr",
+   "params": 92802274,
+   "gflops_forward_96": 146.1,
+   "inference_ms_bf16": 33.9,
+   "train_step_s_bf16": 0.229,
+   "train_batch": 1,
+   "peak_vram_gb_train": 2.29
+  },
+  "M7_swin_unetr_local": {
+   "model": "swin_unetr",
+   "params": 15703004,
+   "gflops_forward_96": 165.4,
+   "inference_ms_bf16": 91.1,
+   "train_step_s_bf16": 0.285,
+   "train_batch": 1,
+   "peak_vram_gb_train": 2.35
+  }
+ }
+}

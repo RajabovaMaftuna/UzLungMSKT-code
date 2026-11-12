@@ -12,6 +12,7 @@ examination within a patient (`E1`, `E2`, …). Patients are identified only by 
 |---|---|
 | `local_volumes.csv` | 30 CT volumes of 19 patients: modality, manufacturer, slice spacing, lung volume, automatic quality-control status and warnings, contrast phase, lung-mask agreement (lungmask vs TotalSegmentator, Dice), patient-level split |
 | `local_reference_lesions.csv` | Lesion proposals and the final category after review by two radiologists (tumour, lymph node, uncertain – masked in evaluation, removed), volume, maximum diameter, SUVmax |
+| `identity_linkage.csv` | Patient-code merge log: clinically confirmed links and two image-based merges with the recorded evidence (summary values of vertebral shape similarity, lung volume); per-pair similarity values were not stored |
 | `local_senguard3d_audit.csv` | SenGuard-3D audit (6 examinations, 7/7 reference lung lesions detected) and closed test (3 patients, 3/3); patient-level loss L |
 
 Summary (from the dataset datasheet): 21 patient codes, 19 with chest CT; age 43–77 years (median 64); 14 men and

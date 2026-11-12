@@ -1,0 +1,334 @@
+{
+ "split": "test",
+ "models": {
+  "M1_unet3d_local": {
+   "n_cases": 3,
+   "dice": [
+    0.2748049198290501,
+    0.0,
+    0.8237818035830783
+   ],
+   "hd95_mm": [
+    128.0784137294684,
+    10.344080432788601,
+    216.9539121564762
+   ],
+   "lesion_sensitivity": 0.6666666666666666,
+   "fp_per_scan": 5.0,
+   "detail": {
+    "n": 3,
+    "dice_per_case": [
+     0.0006329559040720163,
+     0.0,
+     0.8237818035830783
+    ],
+    "hd95_per_case": [
+     156.93724859914045,
+     216.9539121564762,
+     10.344080432788601
+    ],
+    "dice_mean": 0.2748049198290501,
+    "dice_min": 0.0,
+    "dice_max": 0.8237818035830783,
+    "hd95_mean": 128.0784137294684,
+    "hd95_min": 10.344080432788601,
+    "hd95_max": 216.9539121564762,
+    "ci95": null
+   }
+  },
+  "M2_r2u3d_static_local": {
+   "n_cases": 3,
+   "dice": [
+    0.09371555981465034,
+    2.3902630245432207e-05,
+    0.2802113626921479
+   ],
+   "hd95_mm": [
+    85.77195757449964,
+    23.388031127053,
+    149.01023447047936
+   ],
+   "lesion_sensitivity": 0.6666666666666666,
+   "fp_per_scan": 6.5,
+   "detail": {
+    "n": 3,
+    "dice_per_case": [
+     0.0009114141215576246,
+     2.3902630245432207e-05,
+     0.2802113626921479
+    ],
+    "hd95_per_case": [
+     149.01023447047936,
+     84.91760712596653,
+     23.388031127053
+    ],
+    "dice_mean": 0.09371555981465034,
+    "dice_min": 2.3902630245432207e-05,
+    "dice_max": 0.2802113626921479,
+    "hd95_mean": 85.77195757449964,
+    "hd95_min": 23.388031127053,
+    "hd95_max": 149.01023447047936,
+    "ci95": null
+   }
+  },
+  "dicece_s42": {
+   "n_cases": 3,
+   "dice": [
+    0.07098398530963672,
+    0.0,
+    0.2129469823634108
+   ],
+   "hd95_mm": [
+    95.16414486309115,
+    33.734255586866,
+    160.80049656901187
+   ],
+   "lesion_sensitivity": 0.3333333333333333,
+   "fp_per_scan": 2.5,
+   "detail": {
+    "n": 3,
+    "dice_per_case": [
+     0.0,
+     4.973565499370844e-06,
+     0.2129469823634108
+    ],
+    "hd95_per_case": [
+     160.80049656901187,
+     90.95768243339556,
+     33.734255586866
+    ],
+    "dice_mean": 0.07098398530963672,
+    "dice_min": 0.0,
+    "dice_max": 0.2129469823634108,
+    "hd95_mean": 95.16414486309115,
+    "hd95_min": 33.734255586866,
+    "hd95_max": 160.80049656901187,
+    "ci95": null
+   }
+  },
+  "adaptive_s42": {
+   "n_cases": 3,
+   "dice": [
+    0.13841079166878353,
+    0.0,
+    0.41523237500635063
+   ],
+   "hd95_mm": [
+    102.3487038054635,
+    23.43074902771996,
+    157.16774477568424
+   ],
+   "lesion_sensitivity": 0.3333333333333333,
+   "fp_per_scan": 5.25,
+   "detail": {
+    "n": 3,
+    "dice_per_case": [
+     0.0,
+     0.0,
+     0.4152323750063506
+    ],
+    "hd95_per_case": [
+     157.16774477568424,
+     126.44761761298629,
+     23.430749027719962
+    ],
+    "dice_mean": 0.13841079166878353,
+    "dice_min": 0.0,
+    "dice_max": 0.4152323750063506,
+    "hd95_mean": 102.3487038054635,
+    "hd95_min": 23.430749027719962,
+    "hd95_max": 157.16774477568424,
+    "ci95": null
+   }
+  },
+  "M5_res2unet3d_local": {
+   "n_cases": 3,
+   "dice": [
+    0.2016936028273041,
+    0.0,
+    0.6050808084819124
+   ],
+   "hd95_mm": [
+    88.99178467631087
+   ],
+   "lesion_sensitivity": 0.3333333333333333,
+   "fp_per_scan": 2.75,
+   "detail": {
+    "n": 3,
+    "dice_per_case": [
+     0.0,
+     0.0,
+     0.6050808084819124
+    ],
+    "hd95_per_case": [
+     161.64343471425354,
+     null,
+     16.34013463836819
+    ],
+    "dice_mean": 0.2016936028273041,
+    "dice_min": 0.0,
+    "dice_max": 0.6050808084819124,
+    "hd95_mean": 88.99178467631087,
+    "hd95_min": 16.34013463836819,
+    "hd95_max": 161.64343471425354,
+    "ci95": null
+   }
+  },
+  "M6_unetr_local": {
+   "n_cases": 3,
+   "dice": [
+    0.16899462349378416,
+    0.011007157339326284,
+    0.25472695052756505
+   ],
+   "hd95_mm": [
+    132.84796406772247,
+    97.1092113286853,
+    162.00154284237198
+   ],
+   "lesion_sensitivity": 1.0,
+   "fp_per_scan": 49.25,
+   "detail": {
+    "n": 3,
+    "dice_per_case": [
+     0.24124976261446113,
+     0.011007157339326282,
+     0.25472695052756505
+    ],
+    "hd95_per_case": [
+     139.43313803211012,
+     97.1092113286853,
+     162.00154284237198
+    ],
+    "dice_mean": 0.16899462349378416,
+    "dice_min": 0.011007157339326282,
+    "dice_max": 0.25472695052756505,
+    "hd95_mean": 132.84796406772247,
+    "hd95_min": 97.1092113286853,
+    "hd95_max": 162.00154284237198,
+    "ci95": null
+   }
+  },
+  "M7_swin_unetr_local": {
+   "n_cases": 3,
+   "dice": [
+    0.014166347746925304,
+    0.0004314855501936726,
+    0.040814510507660134
+   ],
+   "hd95_mm": [
+    85.67665183386357,
+    27.531799795872406,
+    146.8897545449219
+   ],
+   "lesion_sensitivity": 1.0,
+   "fp_per_scan": 6.25,
+   "detail": {
+    "n": 3,
+    "dice_per_case": [
+     0.001253047182922106,
+     0.00043148555019367253,
+     0.040814510507660134
+    ],
+    "hd95_per_case": [
+     146.8897545449219,
+     82.60840116079643,
+     27.53179979587241
+    ],
+    "dice_mean": 0.014166347746925304,
+    "dice_min": 0.00043148555019367253,
+    "dice_max": 0.040814510507660134,
+    "hd95_mean": 85.67665183386357,
+    "hd95_min": 27.53179979587241,
+    "hd95_max": 146.8897545449219,
+    "ci95": null
+   }
+  }
+ },
+ "pairwise": {
+  "M1_unet3d_local vs M2_r2u3d_static_local": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "M1_unet3d_local vs dicece_s42": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "M1_unet3d_local vs adaptive_s42": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "M1_unet3d_local vs M5_res2unet3d_local": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "M1_unet3d_local vs M6_unetr_local": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "M1_unet3d_local vs M7_swin_unetr_local": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "M2_r2u3d_static_local vs dicece_s42": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "M2_r2u3d_static_local vs adaptive_s42": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "M2_r2u3d_static_local vs M5_res2unet3d_local": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "M2_r2u3d_static_local vs M6_unetr_local": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "M2_r2u3d_static_local vs M7_swin_unetr_local": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s42 vs adaptive_s42": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s42 vs M5_res2unet3d_local": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s42 vs M6_unetr_local": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s42 vs M7_swin_unetr_local": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s42 vs M5_res2unet3d_local": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s42 vs M6_unetr_local": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s42 vs M7_swin_unetr_local": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "M5_res2unet3d_local vs M6_unetr_local": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "M5_res2unet3d_local vs M7_swin_unetr_local": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "M6_unetr_local vs M7_swin_unetr_local": {
+   "n": 3,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  }
+ }
+}
