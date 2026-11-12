@@ -1,0 +1,31 @@
+patient_code,exam,split,modality,manufacturer,slice_spacing_mm,reference_annotated,reference_lung_tumours,detected,patient_loss_L,platform_lesions,primary,secondary,lesions_on_tumour,lesions_on_node_or_uncertain,lesions_not_confirmed,patient_lung_rads,ai_conclusion,reliability,dice_vs_reference,analysis_s
+LC001,E1,,CT,GE,1.250,False,0,0,,1,1,0,0,0,1,4A,high_suspicion,normal,,193.7
+LC001,E2,,CT,GE,0.600,False,0,0,,1,1,0,0,0,1,4B,high_suspicion,normal,,201.7
+LC002,E1,,CT,GE,1.254,False,0,0,,5,2,3,0,0,5,4B,high_suspicion,normal,,217.6
+LC002,E2,,CT,SIEMENS,2.000,False,0,0,,6,3,3,0,0,6,3,high_suspicion,normal,,215.1
+LC002,E3,,CT,GE,1.250,False,0,0,,4,3,1,0,0,4,2,high_suspicion,normal,,211.0
+LC004,E1,,CT,GE,0.625,False,0,0,,7,4,3,0,0,7,4A,high_suspicion,normal,,228.5
+LC005,E1,,CT,GE,0.625,False,0,0,,5,2,3,0,0,5,2,high_suspicion,normal,,215.7
+LC005,E2,,CT,GE,0.625,False,0,0,,9,4,5,0,0,9,2,high_suspicion,normal,,210.6
+LC005,E3,,PET/CT (CT part),GE,1.250,True,0,0,,8,4,4,0,0,8,2,high_suspicion,normal,0.0,192.7
+LC006,E1,,CT,MinFound,1.250,False,0,0,,20,4,16,0,0,20,4B,high_suspicion,normal,,153.6
+LC006,E2,,CT,SINOVISION,1.000,True,1,1,0,29,8,21,5,0,24,4B,high_suspicion,normal,0.18,152.2
+LC007,E1,,CT,Anke,1.250,False,0,0,,17,5,12,0,0,17,4B,high_suspicion,normal,,142.3
+LC007,E2,,PET/CT (CT part),GE,1.250,True,1,1,0,13,4,9,2,1,10,4B,high_suspicion,normal,0.408,144.1
+LC010,E1,,PET/CT (CT part),GE,1.250,True,1,1,0,28,1,27,6,0,22,4B,high_suspicion,normal,0.782,171.8
+LC011,E1,,PET/CT (CT part),GE,1.250,True,1,1,0,28,5,23,5,0,23,4B,high_suspicion,normal,0.711,237.9
+LC012,E1,,PET/CT (CT part),GE,1.250,True,1,1,0,20,2,18,3,0,17,4A,high_suspicion,normal,0.043,173.8
+LC012,E2,,CT,Philips,0.400,False,0,0,,5,3,2,0,0,5,4A,high_suspicion,normal,,112.6
+LC012,E3,,CT,Philips,0.450,False,0,0,,9,1,8,0,0,9,4B,high_suspicion,normal,,158.9
+LC013,E1,,CT,Philips,1.500,False,0,0,,43,16,27,0,0,43,4B,high_suspicion,normal,,150.9
+LC014,E1,,PET/CT (CT part),GE,1.250,True,1,1,0,23,4,19,7,0,16,4A,high_suspicion,normal,0.443,185.7
+LC015,E1,,PET/CT (CT part),GE,1.250,False,0,0,,7,4,3,0,0,7,4A,high_suspicion,normal,,159.6
+LC015,E2,,CT,GE,0.625,False,0,0,,6,3,3,0,0,6,4B,high_suspicion,normal,,144.4
+LC016,E1,,CT,GE,0.625,False,0,0,,2,0,2,0,0,2,,faqat_qoshimcha,normal,,162.2
+LC017,E1,,CT,GE,0.625,False,0,0,,14,3,11,0,0,14,4B,high_suspicion,normal,,193.9
+LC018,E1,,PET/CT (CT part),GE,1.250,True,1,1,0,6,3,3,1,0,5,4B,high_suspicion,normal,0.477,171.5
+LC021,E1,,CT,Anke,1.100,False,0,0,,32,5,27,0,0,32,4A,high_suspicion,normal,,244.5
+LC021,E2,,PET/CT (CT part),GE,1.250,True,1,1,0,11,1,10,4,0,7,4B,high_suspicion,normal,0.396,189.9
+LC023,E1,,PET/CT (CT part),GE,1.250,True,0,0,,16,3,13,0,0,16,2,high_suspicion,normal,0.0,143.4
+LC024,E1,,PET/CT (CT part),GE,1.250,True,1,1,0,25,6,19,5,0,20,4A,high_suspicion,normal,0.36,206.9
+LC025,E1,,CT,Philips,0.450,False,0,0,,26,4,22,0,0,26,2,high_suspicion,normal,,197.2
