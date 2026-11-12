@@ -1,0 +1,12 @@
+---- release ----
+20:30:22 ko'chirildi: 6 fayl
+20:30:42 OK 1: buzilgan qism aniqlandi: 2026-11-04 20:30:42  XATO: qism buzilgan (sha256 mos emas): UzLungMSKT_data_03.zip — faylni qayta ko'chiring
+20:31:02 OK 2: yetishmayotgan qism aniqlandi
+20:32:33 OK 3: toza o'rnatish 92 s
+20:32:38 OK 4: ildiz C:\ZG\exe_test\rel\inst modullar 4712 TASHQI 0 sys.path tashqi: []
+20:35:38 OK 8: arxiv OK (370, 370, 278); N8 OK voksel 3250 qutilar 6
+20:43:58 OK 5: 23 passed in 498.95s (0:08:18)
+20:45:35 OK 6: yangilash ma'lumotni saqladi
+20:47:58 OK 9: reyestr avtostarti, Startup yorlig'i, ish stoli yorlig'i (server o'chiq va yoniq holatda) ishladi
+20:48:07 OK 7: joylandi D:\O'pka saratonini aniqlaydigan dastur va uning bazasi\UzLungCT_dastur 02.11.2026 (eski fayllar: D:\O'pka saratonini aniqlaydigan dastur va uning bazasi\UzLungCT_dastur 02.11.2026\eski_2047)
+20:48:07 RELIZ TAYYOR

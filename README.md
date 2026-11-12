@@ -16,6 +16,9 @@ and the related journal manuscripts on SenGuard-3D and the «UzLungMSKT» softwa
 | `research/ltt/` | Learn-then-Test certification (`s10_eval.py`, `s7a_def_T.py`) and the reproducible certificate-violation simulation (`sim_ltt_v2.py`, seed 20261112, with its output `sim_ltt_v2.json`) |
 | `results/` | Frozen parameters, NLSTseg patient-level split (`splits_v9_nlst.json`), per-patient evaluations on NLSTseg V/C/X and FDG-PET-CT-Lesions C, certificate result (`S10_natija.json`), CPU–GPU equivalence (`31_natija.json`), component hash registry (`senguard3d_registry.json`) |
 | `results/local_anonymised/` | Anonymised aggregate tables of the local clinical dataset: volumes and quality control, radiologist-confirmed reference lesions, SenGuard-3D local audit |
+| `results/cls_K3/` | Nodule malignancy classifier (configuration 3): out-of-fold metrics and temperature-scaling calibration |
+| `results/seg_training/` | Training summaries and configurations of the segmentation models (3D U-Net, R²U3D static/dynamic, 3D-Res2UNet, UNETR, Swin UNETR; MSD and local fine-tuning; loss ablation runs) |
+| `results/test_logs/` | Release-bot log (build 6, tests 1–9, 23 automated tests) and clean-install log (T1–T8) |
 | `docs/` | Model card (`22_SenGuard3D_model_kartasi.md`), final scientific report, certification method notes, CPU–GPU and clean-install test reports (in Uzbek) |
 | `packaging/` | Windows build, installer and release-test scripts |
 | `tools/gpu_opt/` | GPU/CPU adaptation and equivalence scripts |

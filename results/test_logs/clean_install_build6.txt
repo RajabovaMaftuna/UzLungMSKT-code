@@ -1,0 +1,9 @@
+22:02:45 OK T1: 4 qism sha256 mos; UzLungMSKT 2026-11-04 SenGuard-3D v1.0.1 (build 6)
+22:04:19 OK T2: noldan o'rnatish 94 s, birinchi kirish kodi fayli yaratildi
+22:04:19 OK T3: UzLungMSKT 2026-11-04 SenGuard-3D v1.0.1 (build 6); n8_runner ba66c6fbbbfe9d4b
+22:04:24 OK T4: ildiz C:\ZG\toza_sinov\inst modullar 4712 TASHQI 0 sys.path tashqi: []
+22:07:33 OK T5: arxiv OK (370, 370, 278); N8 OK voksel 3250 qutilar 6
+22:16:19 OK T6: 23 passed in 524.41s (0:08:44)
+22:16:19 OK T7: nom, «Xavfli o'simta ehtimoli», mobil CSS, v=46
+22:16:21 OK T8: ishchi platforma 8000 javobi 200
+22:16:21 TUGADI

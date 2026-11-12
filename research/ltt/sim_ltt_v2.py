@@ -27,6 +27,6 @@ for nom, (re, rh, pc, pq) in SC.items():
         v_ex = float(binom.cdf(k, n, RS)) * (RT > EPS)
         se = (v_mc * (1 - v_mc) / REPS) ** 0.5
         out["natija"].append({"sharoit": nom, "r_e": re, "r_h": rh, "pi_S": pc, "pi_T": pq, "R_S": round(RS, 4), "R_T": round(RT, 4),
-                              "n": n, "k_star": k, "V_mc": round(v_mc, 4), "V_mc_se": round(se, 4), "V_aniq": round(v_ex, 4)})
+                              "n": n, "k_star": k, "V_mc": round(v_mc, 6), "V_mc_se": round(se, 6), "V_aniq": round(v_ex, 6)})
         print(nom, n, k, round(RS, 3), round(RT, 3), f"MC {100*v_mc:.1f}% (SE {100*se:.2f})", f"aniq {100*v_ex:.1f}%")
 json.dump(out, open("sim_ltt_v2.json", "w", encoding="utf-8"), ensure_ascii=False, indent=1)

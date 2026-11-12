@@ -25,20 +25,21 @@ def wr(name, head, rows):
 
 qc = {(r['patient'], r['study']): r for r in rd('qc_v2.csv')}
 mk = {(r['patient'], r['study']): r for r in rd('mask_kelishuv.csv')}
+gf = {(r['patient'], r['study']): r for r in rd('geom_fix.csv')}
 rows = []
 for v in sorted(vols, key=lambda v: (v['patient'], order[(v['patient'], v['study'])])):
     k = (v['patient'], v['study']); q = qc.get(k, {}); m = mk.get(k, {})
     phase = q.get('phase', '').split(' ')[0]
     rows.append([v['patient'], order[k], mod(v['study']), v['scanner'].split(' ')[0], v['spacing_xyz_mm'].split('x')[-1],
-                 v['lung_volume_L'], q.get('status', ''), q.get('issues', ''), {'nativ': 'non-contrast', 'kontrastli': 'contrast'}.get(phase, phase),
-                 m.get('dice_lungmask_vs_TS', ''), v['split']])
+                 v['lung_volume_L'], {'OGOHLANTIRISH': 'WARNING'}.get(q.get('status', ''), q.get('status', '')), q.get('issues', ''), {'nativ': 'non-contrast', 'kontrastli': 'contrast', 'arterial': 'contrast (arterial)'}.get(phase, phase),
+                 m.get('dice_lungmask_vs_TS', ''), 'yes' if gf.get(k, {}).get('CT_z_teskari_edi') == 'ha' else 'no', v['split']])
 wr('local_volumes.csv', ['patient_code', 'exam', 'modality', 'manufacturer', 'slice_spacing_mm', 'lung_volume_L', 'qc_status', 'qc_issues',
-                         'contrast_phase', 'lung_mask_dice_lungmask_vs_TotalSegmentator', 'split'], rows)
+                         'contrast_phase', 'lung_mask_dice_lungmask_vs_TotalSegmentator', 'z_direction_corrected', 'split'], rows)
 
 tr = {'o\'sma': 'tumour', 'limfa tuguni': 'lymph node', 'noaniq': 'uncertain', "noaniq (e'tiborsiz)": 'uncertain (masked in evaluation)', 'olib tashlandi': 'removed'}
 rows = [[r['patient'], order.get((r['patient'], r['study']), ''), mod(r['study']), r['lesion'], tr.get(r['yakuniy_toifa'], r['yakuniy_toifa']),
-         r['volume_ml'], r['max_diameter_mm'], r['SUVmax']] for r in rd('lesions_gt.csv')]
-wr('local_reference_lesions.csv', ['patient_code', 'exam', 'modality', 'lesion', 'final_category', 'volume_ml', 'max_diameter_mm', 'SUVmax'], rows)
+         r['volume_ml'], r['max_diameter_mm'], r['SUVmax'], 'PET/CT, two radiologists' if r['manba'].startswith('PET') else 'CT only, one radiologist'] for r in rd('lesions_gt.csv')]
+wr('local_reference_lesions.csv', ['patient_code', 'exam', 'modality', 'lesion', 'final_category', 'volume_ml', 'max_diameter_mm', 'SUVmax', 'reference_source'], rows)
 
 rows = []
 for nm, f in (('audit', 'eval_local_audit.json'), ('closed test', 'eval_local_yopiq.json')):

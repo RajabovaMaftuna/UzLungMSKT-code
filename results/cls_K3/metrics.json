@@ -1,0 +1,59 @@
+{
+ "auc": 0.902854407658556,
+ "sensitivity": 0.7706422018348624,
+ "specificity": 0.9,
+ "accuracy": 0.8584070796460177,
+ "ppv": 0.7850467289719626,
+ "npv": 0.8922413793103449,
+ "n": 1695,
+ "n_pos": 545,
+ "auc_ci95": [
+  0.8837273769216579,
+  0.9198626206147131
+ ],
+ "auc_ci95_method": "bemor darajasida klaster bootstrap, 2000",
+ "n_patients": 740,
+ "selection": {
+  "0": {
+   "epoch": 14,
+   "inner_score": 0.9480249480249481,
+   "n_train": 1205,
+   "n_inner": 115,
+   "n_outer": 375,
+   "n_inner_patients": 59
+  },
+  "1": {
+   "epoch": 35,
+   "inner_score": 0.9093099671412924,
+   "n_train": 1220,
+   "n_inner": 138,
+   "n_outer": 337,
+   "n_inner_patients": 59
+  },
+  "2": {
+   "epoch": 30,
+   "inner_score": 0.9289832285115305,
+   "n_train": 1230,
+   "n_inner": 142,
+   "n_outer": 323,
+   "n_inner_patients": 59
+  },
+  "3": {
+   "epoch": 17,
+   "inner_score": 0.9265501456512693,
+   "n_train": 1206,
+   "n_inner": 143,
+   "n_outer": 346,
+   "n_inner_patients": 59
+  },
+  "4": {
+   "epoch": 22,
+   "inner_score": 0.8703703703703705,
+   "n_train": 1234,
+   "n_inner": 147,
+   "n_outer": 314,
+   "n_inner_patients": 59
+  }
+ },
+ "temperature": 0.3222487081557505
+}

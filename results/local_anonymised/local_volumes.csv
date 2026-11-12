@@ -1,31 +1,31 @@
-patient_code,exam,modality,manufacturer,slice_spacing_mm,lung_volume_L,qc_status,qc_issues,contrast_phase,lung_mask_dice_lungmask_vs_TotalSegmentator,split
-LC001,E1,CT,GE,1.250,5.4,OGOHLANTIRISH,yuqori shovqin (SD 63 HU),non-contrast,0.9728,train
-LC001,E2,CT,GE,0.600,4.98,OK,,non-contrast,0.9718,train
-LC002,E1,CT,GE,1.254,5.39,OK,,non-contrast,0.9777,train
-LC002,E2,CT,SIEMENS,2.000,6.05,OK,,non-contrast,0.9779,train
-LC002,E3,CT,GE,1.250,5.64,OK,,non-contrast,0.9782,train
-LC004,E1,CT,GE,0.625,4.49,OGOHLANTIRISH,metall artefakti (8044 voksel >= 3000 HU),contrast,0.9758,train
-LC005,E1,CT,GE,0.625,6.15,OGOHLANTIRISH,ehtimoliy nafas harakati (6 kesimda keskin sakrash),non-contrast,0.9792,train
-LC005,E2,CT,GE,0.625,6.09,OK,,non-contrast,0.9776,train
-LC005,E3,PET/CT (CT part),GE,1.250,4.0,OGOHLANTIRISH,yuqori shovqin (SD 65 HU),non-contrast,0.9592,train
-LC006,E1,CT,MinFound,1.250,3.14,OGOHLANTIRISH,metall artefakti (47927 voksel >= 3000 HU),non-contrast,0.9544,test
-LC006,E2,CT,SINOVISION,1.000,2.61,OK,,non-contrast,0.9421,test
-LC007,E1,CT,Anke,1.250,2.1,OK,,non-contrast,0.9481,train
-LC007,E2,PET/CT (CT part),GE,1.250,2.04,OGOHLANTIRISH,yuqori shovqin (SD 67 HU),non-contrast,0.9418,train
-LC010,E1,PET/CT (CT part),GE,1.250,2.47,OK,,non-contrast,0.947,test
-LC011,E1,PET/CT (CT part),GE,1.250,7.66,OGOHLANTIRISH,yuqori shovqin (SD 62 HU),non-contrast,0.9574,test
-LC012,E1,PET/CT (CT part),GE,1.250,3.29,OK,,non-contrast,0.9628,val
-LC012,E2,CT,Philips,0.400,3.78,OGOHLANTIRISH,metall artefakti (13810 voksel >= 3000 HU),contrast,0.9722,val
-LC012,E3,CT,Philips,0.450,3.5,OK,,non-contrast,0.9613,val
-LC013,E1,CT,Philips,1.500,3.96,OGOHLANTIRISH,metall artefakti (407 voksel >= 3000 HU); o'pka hajm chegarasida kesilgan (17% maydon),non-contrast,0.9675,val
-LC014,E1,PET/CT (CT part),GE,1.250,3.45,OGOHLANTIRISH,o'pka hajm chegarasida kesilgan (14% maydon),non-contrast,0.9575,train
-LC015,E1,PET/CT (CT part),GE,1.250,3.27,OGOHLANTIRISH,yuqori shovqin (SD 60 HU),non-contrast,0.9627,train
-LC015,E2,CT,GE,0.625,3.36,OGOHLANTIRISH,yuqori shovqin (SD 68 HU),non-contrast,0.9731,train
-LC016,E1,CT,GE,0.625,4.55,OGOHLANTIRISH,metall artefakti (12458 voksel >= 3000 HU),arterial,0.9774,train
-LC017,E1,CT,GE,0.625,4.43,OGOHLANTIRISH,metall artefakti (15646 voksel >= 3000 HU),arterial,0.975,train
-LC018,E1,PET/CT (CT part),GE,1.250,3.2,OGOHLANTIRISH,yuqori shovqin (SD 62 HU),non-contrast,0.9591,train
-LC021,E1,CT,Anke,1.100,5.64,OGOHLANTIRISH,metall artefakti (1575 voksel >= 3000 HU),non-contrast,0.9726,train
-LC021,E2,PET/CT (CT part),GE,1.250,3.02,OK,,non-contrast,0.9541,train
-LC023,E1,PET/CT (CT part),GE,1.250,1.96,OGOHLANTIRISH,yuqori shovqin (SD 63 HU),non-contrast,0.9553,val
-LC024,E1,PET/CT (CT part),GE,1.250,4.66,OGOHLANTIRISH,yuqori shovqin (SD 61 HU),non-contrast,0.9667,train
-LC025,E1,CT,Philips,0.450,4.26,OK,,non-contrast,0.9698,train
+patient_code,exam,modality,manufacturer,slice_spacing_mm,lung_volume_L,qc_status,qc_issues,contrast_phase,lung_mask_dice_lungmask_vs_TotalSegmentator,z_direction_corrected,split
+LC001,E1,CT,GE,1.250,5.4,WARNING,yuqori shovqin (SD 63 HU),non-contrast,0.9728,yes,train
+LC001,E2,CT,GE,0.600,4.98,OK,,non-contrast,0.9718,yes,train
+LC002,E1,CT,GE,1.254,5.39,OK,,non-contrast,0.9777,no,train
+LC002,E2,CT,SIEMENS,2.000,6.05,OK,,non-contrast,0.9779,no,train
+LC002,E3,CT,GE,1.250,5.64,OK,,non-contrast,0.9782,no,train
+LC004,E1,CT,GE,0.625,4.49,WARNING,metall artefakti (8044 voksel >= 3000 HU),contrast,0.9758,no,train
+LC005,E1,CT,GE,0.625,6.15,WARNING,ehtimoliy nafas harakati (6 kesimda keskin sakrash),non-contrast,0.9792,no,train
+LC005,E2,CT,GE,0.625,6.09,OK,,non-contrast,0.9776,no,train
+LC005,E3,PET/CT (CT part),GE,1.250,4.0,WARNING,yuqori shovqin (SD 65 HU),non-contrast,0.9592,yes,train
+LC006,E1,CT,MinFound,1.250,3.14,WARNING,metall artefakti (47927 voksel >= 3000 HU),non-contrast,0.9544,no,test
+LC006,E2,CT,SINOVISION,1.000,2.61,OK,,non-contrast,0.9421,no,test
+LC007,E1,CT,Anke,1.250,2.1,OK,,non-contrast,0.9481,no,train
+LC007,E2,PET/CT (CT part),GE,1.250,2.04,WARNING,yuqori shovqin (SD 67 HU),non-contrast,0.9418,yes,train
+LC010,E1,PET/CT (CT part),GE,1.250,2.47,OK,,non-contrast,0.947,yes,test
+LC011,E1,PET/CT (CT part),GE,1.250,7.66,WARNING,yuqori shovqin (SD 62 HU),non-contrast,0.9574,yes,test
+LC012,E1,PET/CT (CT part),GE,1.250,3.29,OK,,non-contrast,0.9628,yes,val
+LC012,E2,CT,Philips,0.400,3.78,WARNING,metall artefakti (13810 voksel >= 3000 HU),contrast,0.9722,no,val
+LC012,E3,CT,Philips,0.450,3.5,OK,,non-contrast,0.9613,yes,val
+LC013,E1,CT,Philips,1.500,3.96,WARNING,metall artefakti (407 voksel >= 3000 HU); o'pka hajm chegarasida kesilgan (17% maydon),non-contrast,0.9675,no,val
+LC014,E1,PET/CT (CT part),GE,1.250,3.45,WARNING,o'pka hajm chegarasida kesilgan (14% maydon),non-contrast,0.9575,yes,train
+LC015,E1,PET/CT (CT part),GE,1.250,3.27,WARNING,yuqori shovqin (SD 60 HU),non-contrast,0.9627,yes,train
+LC015,E2,CT,GE,0.625,3.36,WARNING,yuqori shovqin (SD 68 HU),non-contrast,0.9731,no,train
+LC016,E1,CT,GE,0.625,4.55,WARNING,metall artefakti (12458 voksel >= 3000 HU),contrast (arterial),0.9774,no,train
+LC017,E1,CT,GE,0.625,4.43,WARNING,metall artefakti (15646 voksel >= 3000 HU),contrast (arterial),0.975,no,train
+LC018,E1,PET/CT (CT part),GE,1.250,3.2,WARNING,yuqori shovqin (SD 62 HU),non-contrast,0.9591,yes,train
+LC021,E1,CT,Anke,1.100,5.64,WARNING,metall artefakti (1575 voksel >= 3000 HU),non-contrast,0.9726,no,train
+LC021,E2,PET/CT (CT part),GE,1.250,3.02,OK,,non-contrast,0.9541,yes,train
+LC023,E1,PET/CT (CT part),GE,1.250,1.96,WARNING,yuqori shovqin (SD 63 HU),non-contrast,0.9553,yes,val
+LC024,E1,PET/CT (CT part),GE,1.250,4.66,WARNING,yuqori shovqin (SD 61 HU),non-contrast,0.9667,yes,train
+LC025,E1,CT,Philips,0.450,4.26,OK,,non-contrast,0.9698,no,train

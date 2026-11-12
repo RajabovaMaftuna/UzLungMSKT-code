@@ -1,0 +1,34 @@
+accum: 1
+amp: true
+batch: 2
+cache: /kaggle/temp/msd_lung
+epochs: 150
+fold: null
+init: null
+k: 5
+loss: dicece
+lr: 0.0003
+max_val_cases: 8
+model: res2unet3d
+model_kw:
+  positions:
+  - 2
+  - 3
+n_classes: 2
+out: /kaggle/working/out/M5_res2unet3d_msd
+params: 5476926
+patch:
+- 96
+- 96
+- 96
+patience: 40
+pos_ratio: 0.66
+resume: true
+samples_per_epoch: 250
+seed: 42
+task: tumor
+train_split: train
+val_every: 10
+val_split: val
+wd: 1.0e-05
+workers: 3

@@ -1,0 +1,21 @@
+{
+ "best_val_dice": 0.19769272035706997,
+ "epochs_run": 80,
+ "params": 3186802,
+ "seconds_total": 6349.2,
+ "peak_vram_gb": 4.85,
+ "git_commit": "5e4540a45ef8d0cbe1c701dd14dffb1b584f63e9",
+ "git_dirty": false,
+ "seed": 42,
+ "n_train_cases": 51,
+ "n_val_cases": 8,
+ "patch": [
+  96,
+  96,
+  96
+ ],
+ "batch": 2,
+ "accum": 1,
+ "init": null,
+ "loss": "dicece"
+}
