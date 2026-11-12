@@ -1,0 +1,18 @@
+UzLungMSKT
+Copyright 2026 Maftuna R. Rajabova
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+It uses, but does not redistribute, the following third-party software and models:
+  - nnU-Net v2 (Isensee et al., 2021) - Apache License 2.0
+  - TotalSegmentator (Wasserthal et al., 2023) - Apache License 2.0
+  - MONAI (Cardoso et al., 2022) - Apache License 2.0
+  - PyTorch - BSD-style licence
+  - SimpleITK - Apache License 2.0
+  - FastAPI - MIT License
+
+It redistributes the DejaVu fonts in uzlungct/web/fonts under their own licence
+(see uzlungct/web/fonts/LICENSE_DEJAVU).
+
+Model weights and datasets are not included. NLSTseg is licensed CC BY 4.0
+(https://doi.org/10.5281/zenodo.14838349).

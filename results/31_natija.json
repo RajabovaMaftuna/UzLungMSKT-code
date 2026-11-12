@@ -1,0 +1,210 @@
+{
+ "bemorlar": [
+  {
+   "bemor": "104363",
+   "etalon_ochoq": 1,
+   "L_gpu": 0,
+   "L_cpu": 0,
+   "ochoq_qarorlari_bir_xil": true,
+   "model_ochoq_gpu": 3,
+   "model_ochoq_cpu": 3,
+   "asosiy_gpu": 2,
+   "asosiy_cpu": 2,
+   "qutilar": [
+    1,
+    1
+   ],
+   "dice": 0.99911,
+   "voksel_farq": 22,
+   "prob_max_farq": 0.00163,
+   "vaqt_gpu_s": 154.1,
+   "vaqt_cpu_s": 1759.0
+  },
+  {
+   "bemor": "106000",
+   "etalon_ochoq": 1,
+   "L_gpu": 0,
+   "L_cpu": 0,
+   "ochoq_qarorlari_bir_xil": true,
+   "model_ochoq_gpu": 2,
+   "model_ochoq_cpu": 2,
+   "asosiy_gpu": 1,
+   "asosiy_cpu": 1,
+   "qutilar": [
+    3,
+    3
+   ],
+   "dice": 0.99958,
+   "voksel_farq": 1,
+   "prob_max_farq": 0.00373,
+   "vaqt_gpu_s": 157.9,
+   "vaqt_cpu_s": 2022.0
+  },
+  {
+   "bemor": "106926",
+   "etalon_ochoq": 1,
+   "L_gpu": 0,
+   "L_cpu": 0,
+   "ochoq_qarorlari_bir_xil": true,
+   "model_ochoq_gpu": 5,
+   "model_ochoq_cpu": 5,
+   "asosiy_gpu": 1,
+   "asosiy_cpu": 1,
+   "qutilar": [
+    1,
+    1
+   ],
+   "dice": 0.99801,
+   "voksel_farq": 18,
+   "prob_max_farq": 0.00612,
+   "vaqt_gpu_s": 175.5,
+   "vaqt_cpu_s": 2156.3
+  },
+  {
+   "bemor": "110021",
+   "etalon_ochoq": 1,
+   "L_gpu": 0,
+   "L_cpu": 0,
+   "ochoq_qarorlari_bir_xil": true,
+   "model_ochoq_gpu": 3,
+   "model_ochoq_cpu": 3,
+   "asosiy_gpu": 2,
+   "asosiy_cpu": 2,
+   "qutilar": [
+    0,
+    0
+   ],
+   "dice": 0.99053,
+   "voksel_farq": 770,
+   "prob_max_farq": 0.00272,
+   "vaqt_gpu_s": 180.5,
+   "vaqt_cpu_s": 2277.6
+  },
+  {
+   "bemor": "123944",
+   "etalon_ochoq": 2,
+   "L_gpu": 1,
+   "L_cpu": 1,
+   "ochoq_qarorlari_bir_xil": true,
+   "model_ochoq_gpu": 2,
+   "model_ochoq_cpu": 2,
+   "asosiy_gpu": 1,
+   "asosiy_cpu": 1,
+   "qutilar": [
+    2,
+    2
+   ],
+   "dice": 0.99238,
+   "voksel_farq": 28,
+   "prob_max_farq": 0.80973,
+   "vaqt_gpu_s": 132.5,
+   "vaqt_cpu_s": 1440.7
+  },
+  {
+   "bemor": "127298",
+   "etalon_ochoq": 5,
+   "L_gpu": 1,
+   "L_cpu": 1,
+   "ochoq_qarorlari_bir_xil": true,
+   "model_ochoq_gpu": 6,
+   "model_ochoq_cpu": 6,
+   "asosiy_gpu": 5,
+   "asosiy_cpu": 5,
+   "qutilar": [
+    2,
+    2
+   ],
+   "dice": 0.99895,
+   "voksel_farq": 40,
+   "prob_max_farq": 0.00836,
+   "vaqt_gpu_s": 216.5,
+   "vaqt_cpu_s": 2890.8
+  },
+  {
+   "bemor": "200628",
+   "etalon_ochoq": 1,
+   "L_gpu": 1,
+   "L_cpu": 1,
+   "ochoq_qarorlari_bir_xil": true,
+   "model_ochoq_gpu": 3,
+   "model_ochoq_cpu": 3,
+   "asosiy_gpu": 2,
+   "asosiy_cpu": 2,
+   "qutilar": [
+    3,
+    3
+   ],
+   "dice": 0.99906,
+   "voksel_farq": 6,
+   "prob_max_farq": 0.00159,
+   "vaqt_gpu_s": 127.0,
+   "vaqt_cpu_s": 1309.2
+  },
+  {
+   "bemor": "203861",
+   "etalon_ochoq": 1,
+   "L_gpu": 0,
+   "L_cpu": 0,
+   "ochoq_qarorlari_bir_xil": true,
+   "model_ochoq_gpu": 3,
+   "model_ochoq_cpu": 3,
+   "asosiy_gpu": 1,
+   "asosiy_cpu": 1,
+   "qutilar": [
+    4,
+    4
+   ],
+   "dice": 0.97534,
+   "voksel_farq": 9,
+   "prob_max_farq": 0.0013,
+   "vaqt_gpu_s": 160.7,
+   "vaqt_cpu_s": 1732.6
+  },
+  {
+   "bemor": "215998",
+   "etalon_ochoq": 1,
+   "L_gpu": 0,
+   "L_cpu": 0,
+   "ochoq_qarorlari_bir_xil": true,
+   "model_ochoq_gpu": 3,
+   "model_ochoq_cpu": 3,
+   "asosiy_gpu": 1,
+   "asosiy_cpu": 1,
+   "qutilar": [
+    4,
+    4
+   ],
+   "dice": 0.99972,
+   "voksel_farq": 24,
+   "prob_max_farq": 0.00149,
+   "vaqt_gpu_s": 162.1,
+   "vaqt_cpu_s": 1575.7
+  },
+  {
+   "bemor": "218368",
+   "etalon_ochoq": 3,
+   "L_gpu": 0,
+   "L_cpu": 0,
+   "ochoq_qarorlari_bir_xil": true,
+   "model_ochoq_gpu": 5,
+   "model_ochoq_cpu": 6,
+   "asosiy_gpu": 3,
+   "asosiy_cpu": 3,
+   "qutilar": [
+    5,
+    5
+   ],
+   "dice": 0.99972,
+   "voksel_farq": 13,
+   "prob_max_farq": 0.00233,
+   "vaqt_gpu_s": 143.9,
+   "vaqt_cpu_s": 1476.5
+  }
+ ],
+ "mezonlar": {
+  "M1_Li": true,
+  "M2_ochoq": true,
+  "M3_soni_triaj": false,
+  "M4_dice": false
+ }
+}

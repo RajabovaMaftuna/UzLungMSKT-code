@@ -1,0 +1,35 @@
+{
+    "display_name":  "SenGuard-3D",
+    "internal_id":  "N8",
+    "version":  "1.0 (2026-11-02, muzlatilgan)",
+    "components":  {
+                       "M2_nnUNet_fold0":  "d2357a001f47c561",
+                       "M2_nnUNet_fold1":  "fecda157c960551a",
+                       "M2_nnUNet_fold2":  "3bab93a5182f7e91",
+                       "M2_nnUNet_fold3":  "1c560a837bab9b0b",
+                       "M2_nnUNet_fold4":  "0b5dbbba73d0cf9b",
+                       "K1_nnUNet_fold_0":  "6c1655e0617e3012",
+                       "K1_nnUNet_fold_1":  "31807a5d99e2b360",
+                       "K1_nnUNet_fold_2":  "86e2acd831235bd9",
+                       "K1_nnUNet_fold_3":  "7a5f718f9e1c2ff9",
+                       "K1_nnUNet_fold_4":  "5283dbd22270a135",
+                       "MONAI_RetinaNet_LUNA16":  "b5e79231466adae9",
+                       "TotalSegmentator_lung_nodules":  "totalsegmentator 2.18.0",
+                       "nnunetv2":  "2.8.1"
+                   },
+    "frozen":  {
+                   "frozen_nomzod_v18.json":  "407ee8f0c28c2c8d",
+                   "S10_natija.json":  "d258b9106d581573",
+                   "00_v18_1_yakuniy_tor_reja.md":  "addd21804dd0f0f6",
+                   "splits_v9_nlst.json":  "375072606d9fafe2",
+                   "n8_runner.py":  "2dacc84d4ef22364",
+                   "n8fusion.py":  "19fa32ca5f40bd81"
+               },
+    "versiya_1_0_1":  {
+                          "sana":  "2026-11-04",
+                          "izoh":  "faqat bajarilish optimallashtirildi: apparatga moslashuv (CUDA/CPU), OOM da zaxira rejim, xotirani tozalash; chegaralar, oynalar, foldlar o\u0027zgarmagan",
+                          "n8_runner.py":  "ba66c6fbbbfe9d4b",
+                          "n8_runner_v100.py (stage, 1.0 ko'chma nusxa)":  "17517a29c48328c6",
+                          "ekvivalentlik":  "3 tekshiruvda niqob GPU da 0 voksel farq; ehtimollik farqi GPU tabiiy tebranishi darajasida (\u003c=8,5e-4); CPU rejimida niqob farqi 2 voksel"
+                      }
+}

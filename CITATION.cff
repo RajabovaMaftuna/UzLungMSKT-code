@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "UzLungMSKT: lung-lesion detection platform for chest CT with the SenGuard-3D ensemble"
+version: "1.0.1"
+date-released: "2026-11-12"
+license: Apache-2.0
+repository-code: "https://github.com/RajabovaMaftuna/UzLungMSKT-code"
+authors:
+  - family-names: Rajabova
+    given-names: "Maftuna R."
+    affiliation: "Tashkent University of Information Technologies named after Muhammad al-Khwarizmi"
+keywords:
+  - lung cancer
+  - computed tomography
+  - lesion detection
+  - conformal risk control
+  - Learn then Test

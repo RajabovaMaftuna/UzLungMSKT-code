@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+*.nii.gz
+*.npz
+*.zip
+*.log
+workspace/
+models/
+python/
+*.db
+.patient_key
+.service_token
+BOSHLANGICH_ADMIN_*.txt

@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UzLungMSKT</title>
+<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/static/style.css?v=46">
+</head>
+<body>
+<div id="login" class="overlay">
+  <div class="lwrap">
+  <div class="lside">
+    <div class="brand big"><svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><path d="M15 6c-5 0-9 6-9 13 0 4 2 7 5 7 2.5 0 4-2 4-5zM17 6c5 0 9 6 9 13 0 4-2 7-5 7-2.5 0-4-2-4-5z"/></svg><span>UzLungMSKT</span></div>
+    <p data-i18n="app.subtitle"></p>
+    <p class="lnote" data-i18n="au.note"></p>
+  </div>
+  <form class="lbox" id="loginForm" autocomplete="on" method="post" action="/" onsubmit="return false">
+    <h2 data-i18n="au.login"></h2>
+    <label><span data-i18n="au.user"></span><input id="lgUser" name="username" autocomplete="username" required></label>
+    <label><span data-i18n="au.pass"></span><span class="pwf"><input id="lgPass" name="password" type="password" autocomplete="current-password" required maxlength="256"><button type="button" class="eye" data-eye="lgPass" aria-pressed="false" data-i18n-title="au.show" data-i18n-aria="au.show">👁</button></span></label>
+    <p class="caps hidden" data-caps="lgPass" role="status" data-i18n="au.caps"></p>
+    <button class="primary wide big" type="submit" data-i18n="au.login"></button>
+    <p id="lgErr" class="err" role="alert" aria-live="assertive"></p>
+    <button type="button" class="linkbtn" id="lgRedeem" data-i18n="au.redeem"></button>
+    <div class="lang seg"><button type="button" data-lang="uz">O‘zbekcha</button><button type="button" data-lang="en">English</button><button type="button" data-lang="ru">Русский</button></div>
+  </form>
+  </div>
+</div>
+<div id="pwBox" class="overlay hidden">
+  <form class="lbox" id="pwForm" method="post" action="/" onsubmit="return false">
+    <h3 data-i18n="au.pwTitle"></h3>
+    <p class="hint" id="pwForced" data-i18n="au.pwForced"></p>
+    <label><span data-i18n="au.pwCur"></span><span class="pwf"><input id="pwCur" type="password" autocomplete="current-password" required maxlength="256"><button type="button" class="eye" data-eye="pwCur" aria-pressed="false" data-i18n-title="au.show" data-i18n-aria="au.show">👁</button></span></label>
+    <label><span data-i18n="au.pwNew"></span><span class="pwf"><input id="pwNew" type="password" autocomplete="new-password" required maxlength="256"><button type="button" class="eye" data-eye="pwNew" aria-pressed="false" data-i18n-title="au.show" data-i18n-aria="au.show">👁</button></span></label>
+    <p class="caps hidden" data-caps="pwNew" role="status" data-i18n="au.caps"></p>
+    <ul class="pwrules" data-rules-for="pwNew"></ul>
+    <label><span data-i18n="au.pwNew2"></span><span class="pwf"><input id="pwNew2" type="password" autocomplete="new-password" required maxlength="256"><button type="button" class="eye" data-eye="pwNew2" aria-pressed="false" data-i18n-title="au.show" data-i18n-aria="au.show">👁</button></span></label>
+    <p class="hint" data-i18n="au.pwRule"></p>
+    <button class="primary" type="submit" data-i18n="st.save"></button> <button type="button" id="pwCancel" data-i18n="au.cancel"></button>
+    <p id="pwErr" class="err"></p>
+  </form>
+</div>
+<div id="rdBox" class="overlay hidden">
+  <form class="lbox" id="rdForm" method="post" action="/" onsubmit="return false">
+    <h3 data-i18n="au.redeemTitle"></h3>
+    <p class="hint" data-i18n="au.redeemHint"></p>
+    <label><span data-i18n="au.user"></span><input id="rdUser" name="username" autocomplete="username" autocapitalize="none" spellcheck="false" required></label>
+    <label><span data-i18n="au.code"></span><input id="rdCode" name="code" autocomplete="one-time-code" autocapitalize="characters" spellcheck="false" placeholder="XXXXX-XXXXX-XXXXX-XXXXX" required maxlength="40"></label>
+    <label><span data-i18n="au.pwNew"></span><span class="pwf"><input id="rdNew" type="password" autocomplete="new-password" required maxlength="256"><button type="button" class="eye" data-eye="rdNew" aria-pressed="false" data-i18n-title="au.show" data-i18n-aria="au.show">👁</button></span></label>
+    <p class="caps hidden" data-caps="rdNew" role="status" data-i18n="au.caps"></p>
+    <ul class="pwrules" data-rules-for="rdNew"></ul>
+    <label><span data-i18n="au.pwNew2"></span><span class="pwf"><input id="rdNew2" type="password" autocomplete="new-password" required maxlength="256"><button type="button" class="eye" data-eye="rdNew2" aria-pressed="false" data-i18n-title="au.show" data-i18n-aria="au.show">👁</button></span></label>
+    <button class="primary" type="submit" data-i18n="au.redeemBtn"></button> <button type="button" id="rdBack" data-i18n="au.back"></button>
+    <p id="rdErr" class="err" role="alert" aria-live="assertive"></p>
+  </form>
+</div>
+<div class="shell">
+<aside class="side">
+  <div class="brand"><svg class="logo" viewBox="0 0 32 32" aria-hidden="true"><path d="M15 6c-5 0-9 6-9 13 0 4 2 7 5 7 2.5 0 4-2 4-5zM17 6c5 0 9 6 9 13 0 4-2 7-5 7-2.5 0-4-2-4-5z"/></svg><span>UzLungMSKT</span></div>
+  <nav>
+    <button data-tab="home" class="active"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg><span data-i18n="tab.home"></span></button>
+    <button data-tab="analyze"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4"/><path d="M7 9l5-5 5 5"/><path d="M4 16v4h16v-4"/></svg><span data-i18n="tab.analyze"></span></button>
+    <button data-tab="viewer"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="12" cy="12" r="4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/></svg><span data-i18n="tab.viewer"></span></button>
+    <button data-tab="train" data-roles="admin researcher"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16"/><path d="M6 16l4-5 3 3 5-7"/></svg><span data-i18n="tab.train"></span></button>
+    <button data-tab="eval" data-roles="admin researcher"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V10M12 20V4M19 20v-7"/></svg><span data-i18n="tab.eval"></span></button>
+    <button data-tab="stats"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20h16"/><rect x="5" y="11" width="3" height="7" rx="1"/><rect x="10.5" y="6" width="3" height="12" rx="1"/><rect x="16" y="9" width="3" height="9" rx="1"/></svg><span data-i18n="tab.stats"></span></button>
+    <button data-tab="consult" data-roles="admin radiologist"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span data-i18n="tab.consult"></span><b class="nbadge hidden" id="csBadge" aria-live="polite"></b></button>
+    <button data-tab="users" data-roles="admin"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 4.5a3.5 3.5 0 010 7M18 14c2 .8 3 2.8 3 6"/></svg><span data-i18n="tab.users"></span></button>
+    <button data-tab="settings" data-roles="admin"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg><span data-i18n="tab.settings"></span></button>
+  </nav>
+  <div class="lang seg"><button data-lang="uz">UZ</button><button data-lang="en">EN</button><button data-lang="ru">RU</button></div>
+</aside>
+<div class="content">
+<header class="top">
+  <div><h1 id="pgTitle"></h1><p class="sub" data-i18n="app.subtitle"></p></div>
+  <div class="ubox"><span class="av" id="uAv"></span><div class="uinfo"><b id="uName"></b><span id="uRole"></span></div>
+    <button id="uPw" class="ghost" data-i18n="au.pwTitle"></button><button id="uOut" class="ghost" data-i18n="au.logout"></button></div>
+</header>
+
+<main>
+<section id="home" class="tab active">
+  <div class="hero">
+    <div class="hero-txt">
+      <span class="hero-kick" data-i18n="hero.kick"></span>
+      <h2 data-i18n="hero.title"></h2>
+      <p data-i18n="hero.lead"></p>
+      <div class="hero-badges"><span class="hb ok" data-i18n="hero.b1"></span><span class="hb" data-i18n="hero.b2"></span><span class="hb warn" data-i18n="hero.b3"></span></div>
+    </div>
+    <div class="hero-act">
+      <button type="button" class="primary big" id="heroAnalyze"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4"/><path d="M7 9l5-5 5 5"/><path d="M4 16v4h16v-4"/></svg><span data-i18n="hero.go"></span></button>
+      <button type="button" class="ghost big" id="heroViewer"><span data-i18n="hero.view"></span></button>
+    </div>
+  </div>
+  <div class="card quick" id="homeQuick" role="button" tabindex="0"><h3 data-i18n="home.quick"></h3><div id="quickBody" class="kpis">…</div></div>
+  <div class="card"><h3 data-i18n="home.jobs"></h3><div id="jobsList">…</div></div>
+  <div class="grid">
+    <div class="card"><h3 data-i18n="home.models"></h3><div id="modelsList">…</div></div>
+    <div class="card"><h3 data-i18n="home.system"></h3><div id="sys">…</div></div>
+    <div class="card" data-roles-el="admin researcher"><h3 data-i18n="home.caches"></h3><div id="cachesList">…</div></div>
+  </div>
+  <p class="note" data-i18n="home.note"></p>
+</section>
+
+<section id="analyze" class="tab">
+  <div class="grid two">
+    <div class="card">
+      <h3 data-i18n="an.upload"></h3>
+      <div class="drop" id="drop" tabindex="0" role="button" aria-haspopup="dialog">
+        <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16V4"/><path d="M7 9l5-5 5 5"/><path d="M4 16v4h16v-4"/></svg>
+        <b data-i18n="an.drop"></b><span class="hint" data-i18n="an.uploadHint"></span>
+      </div>
+      <button type="button" class="filebtn" id="upFolderBtn" aria-haspopup="dialog"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h6l2 2h10v11H3z"/></svg><span data-i18n="an.folder"></span></button>
+      <p class="hint" data-i18n="pr2.flowHint"></p>
+      <p class="curpt" id="upPatient" hidden></p>
+      <label><span data-i18n="an.model"></span><select id="upModel"></select></label>
+    </div>
+    <div class="card" data-roles-el="admin researcher">
+      <h3 data-i18n="an.dataset"></h3>
+      <label><span data-i18n="an.case"></span><select id="dsCase"></select></label>
+      <label><span data-i18n="an.model"></span><select id="dsModel"></select></label>
+      <button id="dsBtn" class="primary wide" data-i18n="an.run"></button>
+      <p class="hint" data-i18n="an.dsHint"></p>
+    </div>
+  </div>
+  <div class="card"><h3 data-i18n="an.jobs"></h3>
+    <label class="inline grow"><span data-i18n="pr2.jobsSearch"></span><input id="anSearch" type="search" autocomplete="off" data-i18n-ph="pr2.searchPh"></label>
+    <div id="anSearchRes" hidden></div><div id="anJobs">…</div></div>
+</section>
+
+<section id="viewer" class="tab">
+  <div class="viewer">
+    <div class="vleft">
+      <div class="vtools">
+        <select id="vAxis"><option value="axial" data-i18n="v.axial"></option><option value="coronal" data-i18n="v.coronal"></option><option value="sagittal" data-i18n="v.sagittal"></option></select>
+        <select id="vWin"><option value="lung" data-i18n="v.lung"></option><option value="mediastinum" data-i18n="v.med"></option><option value="bone" data-i18n="v.bone"></option></select>
+        <label><input type="checkbox" id="vOv" checked> <span data-i18n="v.mask"></span></label>
+        <label><input type="checkbox" id="vGt"> <span data-i18n="v.gt"></span></label>
+        <span id="vIdx"></span>
+      </div>
+      <img id="vImg" alt="">
+      <input type="range" id="vSlider" min="0" max="0" value="0" aria-label="slice">
+      <p class="hint dark" data-i18n="v.hint"></p>
+    </div>
+    <div class="vright">
+      <h3 id="vTitle" data-i18n="v.none"></h3>
+      <div id="vStatus"></div>
+      <p id="vAccess" class="info hidden"></p>
+      <div id="vInfo"></div>
+      <div id="vAI" class="ai"></div>
+      <h4 data-i18n="v.lesions"></h4>
+      <table id="vLes"><thead><tr><th>#</th><th data-i18n="col.ml"></th><th data-i18n="col.d"></th><th data-i18n="col.rads"></th><th data-i18n="col.risk"></th><th data-i18n="col.decision"></th></tr></thead><tbody></tbody></table>
+      <div class="final">
+        <h4 data-i18n="fin.title"></h4>
+        <label><span data-i18n="fin.dx"></span><select id="fnDx">
+          <option value="" data-i18n="dx.none"></option><option value="lung_cancer_suspected" data-i18n="dx.lung_cancer_suspected"></option>
+          <option value="benign_lesion" data-i18n="dx.benign_lesion"></option><option value="follow_up" data-i18n="dx.follow_up"></option>
+          <option value="no_pathology" data-i18n="dx.no_pathology"></option><option value="other" data-i18n="dx.other"></option></select></label>
+        <label><span data-i18n="fin.rads"></span><select id="fnRads"><option value="">—</option><option>1</option><option>2</option><option>3</option><option>4A</option><option>4B</option><option>4X</option></select></label>
+        <label><span data-i18n="fin.rec"></span><textarea id="fnRec" rows="2"></textarea></label>
+        <label><span data-i18n="v.radiologist"></span><input id="rvName" readonly></label>
+        <label><span data-i18n="v.conclusion"></span><textarea id="rvConc" rows="3"></textarea></label>
+        <p id="fnLock" class="hint"></p>
+        <div class="actions"><button id="rvDraft" data-i18n="fin.draft"></button><button id="rvSave" class="primary" data-i18n="fin.confirm"></button><button id="rvDelete" class="danger" data-i18n="del.btn"></button></div>
+      </div>
+      <div class="links" id="vLinks"></div>
+      <button id="vAttach" class="wide hidden"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M18 8v6M15 11h6"/></svg><span data-i18n="pr2.attach"></span></button>
+      <button id="vShare" class="primary wide hidden"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12l16-8-6 16-3-7z"/></svg><span data-i18n="sh.btn"></span></button>
+      <div id="vShared" class="hint"></div>
+    </div>
+  </div>
+</section>
+
+<section id="train" class="tab">
+  <div class="card tr2"><h3 data-i18n="t2.title"></h3><p class="hint" data-i18n="t2.lead"></p>
+    <table class="t2"><thead><tr><th data-i18n="t2.c1"></th><th data-i18n="t2.c2"></th><th data-i18n="t2.c3"></th><th data-i18n="t2.c4"></th></tr></thead><tbody>
+      <tr><td><b>M2 · nnU-Net v2 3D</b></td><td data-i18n="t2.m2d"></td><td data-i18n="t2.m2t"></td><td>0.590 (0.528–0.629)</td></tr>
+      <tr><td><b>K1 · nnU-Net v2 3D</b></td><td data-i18n="t2.k1d"></td><td data-i18n="t2.k1t"></td><td>0.618 (0.527–0.692)</td></tr>
+      <tr><td><b>TotalSegmentator</b></td><td data-i18n="t2.tsd"></td><td data-i18n="t2.ready"></td><td>—</td></tr>
+      <tr><td><b>RetinaNet 3D (MONAI)</b></td><td>LUNA16</td><td data-i18n="t2.ready"></td><td>—</td></tr>
+    </tbody></table>
+    <p class="hint" data-i18n="t2.dice"></p>
+  </div>
+  <div class="grid two">
+    <div class="card"><h3 data-i18n="t2.dsTitle"></h3><table class="t2"><tbody>
+      <tr><td>NLSTseg (LDCT)</td><td>605</td><td data-i18n="t2.dsNlst"></td></tr>
+      <tr><td>MSD Task06 Lung</td><td>63</td><td data-i18n="t2.dsMsd"></td></tr>
+      <tr><td>FDG-PET-CT-Lesions</td><td>168</td><td data-i18n="t2.dsFdg"></td></tr>
+      <tr><td data-i18n="t2.dsLocalN"></td><td>21</td><td data-i18n="t2.dsLocal"></td></tr></tbody></table></div>
+    <div class="card"><h3 data-i18n="t2.certTitle"></h3><table class="t2"><tbody>
+      <tr><td data-i18n="t2.cert1"></td><td>3/236 (1.3%)</td><td class="ok" data-i18n="t2.pass"></td></tr>
+      <tr><td data-i18n="t2.cert2"></td><td>3/135 (2.2%)</td><td class="no" data-i18n="t2.fail"></td></tr>
+      <tr><td>FDG-PET/KT</td><td>27/81 (33.3%)</td><td class="no" data-i18n="t2.none"></td></tr></tbody></table>
+      <p class="hint" data-i18n="t2.retrain"></p></div>
+  </div>
+  <details class="card oldtr"><summary data-i18n="t2.old"></summary><p class="warn" data-i18n="t2.oldWarn"></p>
+  <div class="grid two">
+    <div class="card">
+      <h3 data-i18n="tr.prep"></h3>
+      <label><span data-i18n="tr.src"></span><select id="prSrc"><option value="local" data-i18n="tr.srcLocal"></option><option value="msd" data-i18n="tr.srcMsd"></option><option value="pairs" data-i18n="tr.srcPairs"></option></select></label>
+      <label><span data-i18n="tr.root"></span><input id="prRoot"></label>
+      <label><span data-i18n="tr.task"></span><select id="prTask"><option value="tumor" data-i18n="tr.taskTumor"></option><option value="lung" data-i18n="tr.taskLung"></option></select></label>
+      <label><span data-i18n="tr.cacheName"></span><input id="prName" value="local_tumor"></label>
+      <button id="prBtn" data-i18n="tr.prepBtn"></button>
+    </div>
+    <div class="card">
+      <h3 data-i18n="tr.train"></h3>
+      <label><span data-i18n="tr.cache"></span><select id="trCache"></select></label>
+      <label><span data-i18n="tr.model"></span><select id="trModel">
+        <option value="unet3d" data-i18n="m.unet3d"></option><option value="r2u3d_static" data-i18n="m.r2s"></option>
+        <option value="r2u3d_dynamic" data-i18n="m.r2d"></option><option value="res2unet3d" data-i18n="m.res2" selected></option>
+        <option value="unetr" data-i18n="m.unetr"></option><option value="swin_unetr" data-i18n="m.swin"></option></select></label>
+      <label><span data-i18n="tr.loss"></span><select id="trLoss">
+        <option value="dicece" data-i18n="l.dicece" selected></option><option value="ell" data-i18n="l.ell"></option><option value="focal_tversky" data-i18n="l.ft"></option>
+        <option value="unified_focal" data-i18n="l.uf"></option><option value="adaptive" data-i18n="l.adaptive"></option></select></label>
+      <div class="row"><label><span data-i18n="tr.epochs"></span><input id="trEp" type="number" value="150" min="1" max="1000"></label><label><span data-i18n="tr.fold"></span><input id="trFold" type="number"></label></div>
+      <label><span data-i18n="tr.init"></span><select id="trInit"></select></label>
+      <label><span data-i18n="tr.name"></span><input id="trName" value="tumor_res2unet_dicece"></label>
+      <button id="trBtn" class="primary" data-i18n="tr.start"></button>
+      <p class="hint" data-i18n="tr.hint"></p>
+    </div>
+  </div>
+  <div class="card"><h3 data-i18n="tr.progress"></h3><select id="trJobSel"></select> <button id="trStop" class="danger" data-i18n="tr.stop"></button>
+    <svg id="trChart" viewBox="0 0 700 240"></svg><pre id="trLog"></pre></div>
+  </details>
+</section>
+
+<section id="eval" class="tab">
+  <div class="card ev2"><h3 data-i18n="e2.title"></h3><p class="hint" data-i18n="e2.lead"></p>
+    <table class="t2"><thead><tr><th data-i18n="e2.c1"></th><th>n</th><th data-i18n="e2.c3"></th><th data-i18n="e2.c4"></th></tr></thead><tbody>
+      <tr><td data-i18n="e2.r1"></td><td>236</td><td>98.7% (≥96.7%)</td><td class="ok" data-i18n="t2.pass"></td></tr>
+      <tr><td data-i18n="e2.r2"></td><td>241</td><td>97.9%</td><td data-i18n="e2.desc"></td></tr>
+      <tr><td data-i18n="e2.r3"></td><td>81</td><td>66.7%</td><td class="no" data-i18n="t2.none"></td></tr>
+      <tr><td data-i18n="e2.r4"></td><td>6 + 3</td><td>100% (n kichik)</td><td data-i18n="e2.desc"></td></tr>
+    </tbody></table>
+    <p class="hint" data-i18n="e2.fp"></p></div>
+  <details class="card oldtr"><summary data-i18n="e2.old"></summary><p class="warn" data-i18n="e2.oldWarn"></p>
+  <div>
+    <h3 data-i18n="ev.title"></h3>
+    <label><span data-i18n="tr.cache"></span><select id="evCache"></select></label>
+    <label><span data-i18n="ev.split"></span><select id="evSplit"><option value="val" data-i18n="ev.val" selected></option><option value="test" data-i18n="ev.test"></option></select></label>
+    <p class="hint" data-i18n="ev.hintVal"></p>
+    <h4 data-i18n="ev.models"></h4><div id="evModels" class="checks"></div>
+    <button id="evBtn" class="primary" data-i18n="ev.run"></button>
+  </div>
+  </details>
+  <div class="card"><h3 data-i18n="ev.results"></h3><div id="evRes">…</div></div>
+</section>
+
+<section id="stats" class="tab">
+  <div class="card">
+    <div class="toolbar">
+      <div class="seg" id="sGran" role="group"><button data-g="day" data-i18n="s.day"></button><button data-g="month" data-i18n="s.month"></button><button data-g="year" data-i18n="s.year"></button></div>
+      <label class="inline"><span data-i18n="s.from"></span><input type="date" id="sFrom"></label>
+      <label class="inline"><span data-i18n="s.to"></span><input type="date" id="sTo"></label>
+      <div class="presets"><button data-p="7" data-i18n="s.last7"></button><button data-p="30" data-i18n="s.last30"></button><button data-p="year" data-i18n="s.thisYear"></button><button data-p="all" data-i18n="s.all"></button></div>
+      <button id="sRefresh" class="primary" data-i18n="s.refresh"></button>
+      <button id="sCsv" data-roles-el="admin researcher" data-i18n="s.csv"></button>
+    </div>
+    <p id="sScope" class="hint hidden" data-i18n="s.scope"></p>
+  </div>
+  <div id="sKpi" class="kpis"></div>
+  <div class="card"><h3 data-i18n="ch.dynamics"></h3><div id="chDyn" class="chart"></div></div>
+  <div class="grid two">
+    <div class="card"><h3 data-i18n="ch.diagnoses"></h3><div id="chDx" class="chart"></div></div>
+    <div class="card"><h3 data-i18n="ch.aic"></h3><div id="chAic" class="chart"></div></div>
+    <div class="card"><h3 data-i18n="ch.rads"></h3><div id="chRads" class="chart"></div><p id="chAgree" class="hint"></p></div>
+    <div class="card"><h3 data-i18n="ch.sources"></h3><div id="chSrc" class="chart"></div></div>
+  </div>
+  <div class="card" data-roles-el="admin"><h3 data-i18n="ch.users"></h3><div id="chUsers"></div></div>
+</section>
+
+<section id="consult" class="tab">
+  <div class="card">
+    <div class="toolbar">
+      <div class="seg" id="cBox" role="tablist"><button data-box="inbox" role="tab"><span data-i18n="cs.inbox"></span> <b id="cInN" class="nbadge hidden"></b></button><button data-box="sent" role="tab"><span data-i18n="cs.sent"></span> <b id="cSentN" class="nbadge hidden"></b></button><button data-box="archive" role="tab" data-i18n="cs.archive"></button></div>
+      <label class="inline"><span data-i18n="cs.state"></span><select id="cfState"></select></label>
+      <label class="inline"><span data-i18n="cs.kind"></span><select id="cfKind"><option value="" data-i18n="cs.all"></option><option value="consult" data-i18n="ck.consult"></option><option value="handover" data-i18n="ck.handover"></option></select></label>
+      <label class="inline"><span data-i18n="cs.prio"></span><select id="cfPrio"><option value="" data-i18n="cs.all"></option><option value="urgent" data-i18n="pr.urgent"></option><option value="normal" data-i18n="pr.normal"></option></select></label>
+      <label class="inline grow"><span data-i18n="cs.search"></span><input id="cfQ" type="search"></label>
+    </div>
+  </div>
+  <div class="cgrid">
+    <div class="card"><div id="cList" class="scroll tall">…</div></div>
+    <div class="card" id="cDetail"><p class="hint" data-i18n="cs.pick"></p></div>
+  </div>
+</section>
+
+<section id="users" class="tab">
+  <div class="grid two">
+    <div class="card">
+      <h3 data-i18n="us.new"></h3>
+      <label><span data-i18n="au.user"></span><input id="nuLogin" placeholder="a.rasulov"></label>
+      <label><span data-i18n="us.fullname"></span><input id="nuName"></label>
+      <label><span data-i18n="us.role"></span><select id="nuRole"><option value="radiologist" data-i18n="role.radiologist"></option><option value="researcher" data-i18n="role.researcher"></option><option value="admin" data-i18n="role.admin"></option></select></label>
+      <button id="nuBtn" class="primary" data-i18n="us.create"></button>
+      <p class="hint" data-i18n="us.tempHint"></p>
+      <pre id="nuOut" class="hidden"></pre>
+    </div>
+    <div class="card"><h3 data-i18n="us.list"></h3><div id="usList">…</div></div>
+  </div>
+  <div class="card"><h3 data-i18n="us.audit"></h3><div id="auList" class="scroll">…</div></div>
+</section>
+
+<section id="settings" class="tab">
+  <div class="card">
+    <label><span data-i18n="st.root"></span><input id="stRoot"></label>
+    <label><span data-i18n="st.inst"></span><input id="stInst"></label>
+    <button id="stSave" class="primary" data-i18n="st.save"></button>
+  </div>
+</section>
+</main>
+</div>
+</div>
+<div id="shareBox" class="overlay hidden" role="dialog" aria-modal="true" aria-labelledby="shTitle">
+  <form class="lbox" id="shForm" method="post" action="/" onsubmit="return false">
+    <h3 id="shTitle" data-i18n="sh.title"></h3>
+    <label><span data-i18n="sh.to"></span><input id="shFind" type="search" autocomplete="off" data-i18n-ph="sh.find"></label>
+    <div id="shUsers" class="ulist"></div>
+    <label><span data-i18n="cs.kind"></span></label>
+    <div class="seg" id="shKind"><button type="button" data-v="consult" data-i18n="ck.consult"></button><button type="button" data-v="handover" data-i18n="ck.handover"></button></div>
+    <p class="hint" id="shKindHint"></p>
+    <div class="row">
+      <label><span data-i18n="cs.prio"></span><select id="shPrio"><option value="normal" data-i18n="pr.normal"></option><option value="urgent" data-i18n="pr.urgent"></option></select></label>
+      <label><span data-i18n="cs.until"></span><select id="shDays"><option>7</option><option>14</option><option selected>30</option><option>60</option><option>90</option></select></label>
+    </div>
+    <label><span data-i18n="cs.message"></span><textarea id="shMsg" rows="3" maxlength="1000"></textarea><span class="hint" id="shCount"></span></label>
+    <p id="shErr" class="err"></p>
+    <button class="primary" type="submit" data-i18n="cs.send"></button> <button type="button" id="shCancel" data-i18n="au.cancel"></button>
+  </form>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="/static/i18n.js?v=46"></script>
+<script src="/static/patient.js?v=46"></script>
+<script src="/static/registry.js?v=46"></script>
+<script src="/static/app.js?v=46"></script>
+</body>
+</html>
