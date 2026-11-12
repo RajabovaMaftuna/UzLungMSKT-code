@@ -1,0 +1,892 @@
+{
+ "split": "val",
+ "models": {
+  "dicece_s42": {
+   "n_cases": 2,
+   "dice": [
+    0.11603487307933144,
+    NaN,
+    NaN
+   ],
+   "hd95_mm": [
+    58.54263588185999
+   ],
+   "lesion_sensitivity": 0.5,
+   "fp_per_scan": 3.0,
+   "detail": {
+    "n": 2,
+    "dice_per_case": [
+     0.23206974615866288,
+     0.0
+    ],
+    "hd95_per_case": [
+     20.0,
+     97.08527176371997
+    ],
+    "dice_mean": 0.11603487307933144,
+    "dice_min": 0.0,
+    "dice_max": 0.23206974615866288,
+    "hd95_mean": 58.54263588185999,
+    "hd95_min": 20.0,
+    "hd95_max": 97.08527176371997,
+    "ci95": null
+   }
+  },
+  "ell_s42": {
+   "n_cases": 2,
+   "dice": [
+    0.0,
+    NaN,
+    NaN
+   ],
+   "hd95_mm": [
+    47.16990566028302
+   ],
+   "lesion_sensitivity": 0.0,
+   "fp_per_scan": 0.8,
+   "detail": {
+    "n": 2,
+    "dice_per_case": [
+     0.0,
+     0.0
+    ],
+    "hd95_per_case": [
+     null,
+     47.16990566028302
+    ],
+    "dice_mean": 0.0,
+    "dice_min": 0.0,
+    "dice_max": 0.0,
+    "hd95_mean": 47.16990566028302,
+    "hd95_min": 47.16990566028302,
+    "hd95_max": 47.16990566028302,
+    "ci95": null
+   }
+  },
+  "focal_tversky_s42": {
+   "n_cases": 2,
+   "dice": [
+    0.014077616128794032,
+    NaN,
+    NaN
+   ],
+   "hd95_mm": [
+    167.28400360396225
+   ],
+   "lesion_sensitivity": 0.5,
+   "fp_per_scan": 10.6,
+   "detail": {
+    "n": 2,
+    "dice_per_case": [
+     0.028155232257588064,
+     0.0
+    ],
+    "hd95_per_case": [
+     208.46606437093027,
+     126.10194283699421
+    ],
+    "dice_mean": 0.014077616128794032,
+    "dice_min": 0.0,
+    "dice_max": 0.028155232257588064,
+    "hd95_mean": 167.28400360396225,
+    "hd95_min": 126.10194283699421,
+    "hd95_max": 208.46606437093027,
+    "ci95": null
+   }
+  },
+  "unified_focal_s42": {
+   "n_cases": 2,
+   "dice": [
+    0.0005274261603375527,
+    NaN,
+    NaN
+   ],
+   "hd95_mm": [
+    118.86196904625439
+   ],
+   "lesion_sensitivity": 0.0,
+   "fp_per_scan": 1.4,
+   "detail": {
+    "n": 2,
+    "dice_per_case": [
+     0.0010548523206751054,
+     0.0
+    ],
+    "hd95_per_case": [
+     189.95365444252403,
+     47.77028364998475
+    ],
+    "dice_mean": 0.0005274261603375527,
+    "dice_min": 0.0,
+    "dice_max": 0.0010548523206751054,
+    "hd95_mean": 118.86196904625439,
+    "hd95_min": 47.77028364998475,
+    "hd95_max": 189.95365444252403,
+    "ci95": null
+   }
+  },
+  "adaptive_s42": {
+   "n_cases": 2,
+   "dice": [
+    0.06704181176633381,
+    NaN,
+    NaN
+   ],
+   "hd95_mm": [
+    37.5830090870851
+   ],
+   "lesion_sensitivity": 0.5,
+   "fp_per_scan": 1.4,
+   "detail": {
+    "n": 2,
+    "dice_per_case": [
+     0.13408362353266762,
+     0.0
+    ],
+    "hd95_per_case": [
+     27.51363298439521,
+     47.652385189775
+    ],
+    "dice_mean": 0.06704181176633381,
+    "dice_min": 0.0,
+    "dice_max": 0.13408362353266762,
+    "hd95_mean": 37.5830090870851,
+    "hd95_min": 27.51363298439521,
+    "hd95_max": 47.652385189775,
+    "ci95": null
+   }
+  },
+  "dicece_s7": {
+   "n_cases": 2,
+   "dice": [
+    0.0,
+    NaN,
+    NaN
+   ],
+   "hd95_mm": [
+    81.49245120000086
+   ],
+   "lesion_sensitivity": 0.0,
+   "fp_per_scan": 4.4,
+   "detail": {
+    "n": 2,
+    "dice_per_case": [
+     0.0,
+     0.0
+    ],
+    "hd95_per_case": [
+     70.9577324989339,
+     92.02716990106781
+    ],
+    "dice_mean": 0.0,
+    "dice_min": 0.0,
+    "dice_max": 0.0,
+    "hd95_mean": 81.49245120000086,
+    "hd95_min": 70.9577324989339,
+    "hd95_max": 92.02716990106781,
+    "ci95": null
+   }
+  },
+  "ell_s7": {
+   "n_cases": 2,
+   "dice": [
+    0.030287867192559017,
+    NaN,
+    NaN
+   ],
+   "hd95_mm": [
+    130.04553667038186
+   ],
+   "lesion_sensitivity": 0.5,
+   "fp_per_scan": 2.0,
+   "detail": {
+    "n": 2,
+    "dice_per_case": [
+     0.060575734385118034,
+     0.0
+    ],
+    "hd95_per_case": [
+     172.50797068424382,
+     87.58310265651993
+    ],
+    "dice_mean": 0.030287867192559017,
+    "dice_min": 0.0,
+    "dice_max": 0.060575734385118034,
+    "hd95_mean": 130.04553667038186,
+    "hd95_min": 87.58310265651993,
+    "hd95_max": 172.50797068424382,
+    "ci95": null
+   }
+  },
+  "focal_tversky_s7": {
+   "n_cases": 2,
+   "dice": [
+    0.02092096226569361,
+    NaN,
+    NaN
+   ],
+   "hd95_mm": [
+    151.82758896252852
+   ],
+   "lesion_sensitivity": 1.0,
+   "fp_per_scan": 10.2,
+   "detail": {
+    "n": 2,
+    "dice_per_case": [
+     0.04141937566118592,
+     0.0004225488702012995
+    ],
+    "hd95_per_case": [
+     168.0836101207954,
+     135.57156780426166
+    ],
+    "dice_mean": 0.02092096226569361,
+    "dice_min": 0.0004225488702012995,
+    "dice_max": 0.04141937566118592,
+    "hd95_mean": 151.82758896252852,
+    "hd95_min": 135.57156780426166,
+    "hd95_max": 168.0836101207954,
+    "ci95": null
+   }
+  },
+  "unified_focal_s7": {
+   "n_cases": 2,
+   "dice": [
+    0.03125893623105519,
+    NaN,
+    NaN
+   ],
+   "hd95_mm": [
+    176.7852169767463
+   ],
+   "lesion_sensitivity": 0.5,
+   "fp_per_scan": 13.8,
+   "detail": {
+    "n": 2,
+    "dice_per_case": [
+     0.06251787246211038,
+     0.0
+    ],
+    "hd95_per_case": [
+     211.60600179218125,
+     141.96443216131135
+    ],
+    "dice_mean": 0.03125893623105519,
+    "dice_min": 0.0,
+    "dice_max": 0.06251787246211038,
+    "hd95_mean": 176.7852169767463,
+    "hd95_min": 141.96443216131135,
+    "hd95_max": 211.60600179218125,
+    "ci95": null
+   }
+  },
+  "adaptive_s7": {
+   "n_cases": 2,
+   "dice": [
+    0.012347767253044655,
+    NaN,
+    NaN
+   ],
+   "hd95_mm": [
+    59.89031255217815
+   ],
+   "lesion_sensitivity": 0.5,
+   "fp_per_scan": 3.6,
+   "detail": {
+    "n": 2,
+    "dice_per_case": [
+     0.02469553450608931,
+     0.0
+    ],
+    "hd95_per_case": [
+     22.561028345356956,
+     97.21959675899934
+    ],
+    "dice_mean": 0.012347767253044655,
+    "dice_min": 0.0,
+    "dice_max": 0.02469553450608931,
+    "hd95_mean": 59.89031255217815,
+    "hd95_min": 22.561028345356956,
+    "hd95_max": 97.21959675899934,
+    "ci95": null
+   }
+  },
+  "dicece_s2026": {
+   "n_cases": 2,
+   "dice": [
+    0.09916600022849309,
+    NaN,
+    NaN
+   ],
+   "hd95_mm": [
+    31.381036252111745
+   ],
+   "lesion_sensitivity": 0.5,
+   "fp_per_scan": 3.4,
+   "detail": {
+    "n": 2,
+    "dice_per_case": [
+     0.19833200045698618,
+     0.0
+    ],
+    "hd95_per_case": [
+     15.588457268119896,
+     47.17361523610359
+    ],
+    "dice_mean": 0.09916600022849309,
+    "dice_min": 0.0,
+    "dice_max": 0.19833200045698618,
+    "hd95_mean": 31.381036252111745,
+    "hd95_min": 15.588457268119896,
+    "hd95_max": 47.17361523610359,
+    "ci95": null
+   }
+  },
+  "ell_s2026": {
+   "n_cases": 2,
+   "dice": [
+    0.021424524112160982,
+    NaN,
+    NaN
+   ],
+   "hd95_mm": [
+    134.69684634115768
+   ],
+   "lesion_sensitivity": 0.5,
+   "fp_per_scan": 2.4,
+   "detail": {
+    "n": 2,
+    "dice_per_case": [
+     0.042849048224321964,
+     0.0
+    ],
+    "hd95_per_case": [
+     172.26491218961073,
+     97.12878049270464
+    ],
+    "dice_mean": 0.021424524112160982,
+    "dice_min": 0.0,
+    "dice_max": 0.042849048224321964,
+    "hd95_mean": 134.69684634115768,
+    "hd95_min": 97.12878049270464,
+    "hd95_max": 172.26491218961073,
+    "ci95": null
+   }
+  },
+  "focal_tversky_s2026": {
+   "n_cases": 2,
+   "dice": [
+    0.06131492774368125,
+    NaN,
+    NaN
+   ],
+   "hd95_mm": [
+    72.08123436250227
+   ],
+   "lesion_sensitivity": 0.5,
+   "fp_per_scan": 4.4,
+   "detail": {
+    "n": 2,
+    "dice_per_case": [
+     0.1226298554873625,
+     0.0
+    ],
+    "hd95_per_case": [
+     30.298514815086232,
+     113.86395390991831
+    ],
+    "dice_mean": 0.06131492774368125,
+    "dice_min": 0.0,
+    "dice_max": 0.1226298554873625,
+    "hd95_mean": 72.08123436250227,
+    "hd95_min": 30.298514815086232,
+    "hd95_max": 113.86395390991831,
+    "ci95": null
+   }
+  },
+  "unified_focal_s2026": {
+   "n_cases": 2,
+   "dice": [
+    0.21522195036700453,
+    NaN,
+    NaN
+   ],
+   "hd95_mm": [
+    29.229999160619535
+   ],
+   "lesion_sensitivity": 0.5,
+   "fp_per_scan": 2.2,
+   "detail": {
+    "n": 2,
+    "dice_per_case": [
+     0.43044390073400907,
+     0.0
+    ],
+    "hd95_per_case": [
+     14.124347079114056,
+     44.33565124212502
+    ],
+    "dice_mean": 0.21522195036700453,
+    "dice_min": 0.0,
+    "dice_max": 0.43044390073400907,
+    "hd95_mean": 29.229999160619535,
+    "hd95_min": 14.124347079114056,
+    "hd95_max": 44.33565124212502,
+    "ci95": null
+   }
+  },
+  "adaptive_s2026": {
+   "n_cases": 2,
+   "dice": [
+    0.05280304058639881,
+    NaN,
+    NaN
+   ],
+   "hd95_mm": [
+    39.51110941405834
+   ],
+   "lesion_sensitivity": 0.5,
+   "fp_per_scan": 1.4,
+   "detail": {
+    "n": 2,
+    "dice_per_case": [
+     0.10560608117279761,
+     0.0
+    ],
+    "hd95_per_case": [
+     32.341923257592455,
+     46.680295570524216
+    ],
+    "dice_mean": 0.05280304058639881,
+    "dice_min": 0.0,
+    "dice_max": 0.10560608117279761,
+    "hd95_mean": 39.51110941405834,
+    "hd95_min": 32.341923257592455,
+    "hd95_max": 46.680295570524216,
+    "ci95": null
+   }
+  }
+ },
+ "pairwise": {
+  "dicece_s42 vs ell_s42": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s42 vs focal_tversky_s42": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s42 vs unified_focal_s42": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s42 vs adaptive_s42": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s42 vs dicece_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s42 vs ell_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s42 vs focal_tversky_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s42 vs unified_focal_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s42 vs adaptive_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s42 vs dicece_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s42 vs ell_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s42 vs focal_tversky_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s42 vs unified_focal_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s42 vs adaptive_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s42 vs focal_tversky_s42": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s42 vs unified_focal_s42": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s42 vs adaptive_s42": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s42 vs dicece_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s42 vs ell_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s42 vs focal_tversky_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s42 vs unified_focal_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s42 vs adaptive_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s42 vs dicece_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s42 vs ell_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s42 vs focal_tversky_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s42 vs unified_focal_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s42 vs adaptive_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s42 vs unified_focal_s42": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s42 vs adaptive_s42": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s42 vs dicece_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s42 vs ell_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s42 vs focal_tversky_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s42 vs unified_focal_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s42 vs adaptive_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s42 vs dicece_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s42 vs ell_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s42 vs focal_tversky_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s42 vs unified_focal_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s42 vs adaptive_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s42 vs adaptive_s42": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s42 vs dicece_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s42 vs ell_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s42 vs focal_tversky_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s42 vs unified_focal_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s42 vs adaptive_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s42 vs dicece_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s42 vs ell_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s42 vs focal_tversky_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s42 vs unified_focal_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s42 vs adaptive_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s42 vs dicece_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s42 vs ell_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s42 vs focal_tversky_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s42 vs unified_focal_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s42 vs adaptive_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s42 vs dicece_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s42 vs ell_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s42 vs focal_tversky_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s42 vs unified_focal_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s42 vs adaptive_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s7 vs ell_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s7 vs focal_tversky_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s7 vs unified_focal_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s7 vs adaptive_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s7 vs dicece_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s7 vs ell_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s7 vs focal_tversky_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s7 vs unified_focal_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s7 vs adaptive_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s7 vs focal_tversky_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s7 vs unified_focal_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s7 vs adaptive_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s7 vs dicece_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s7 vs ell_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s7 vs focal_tversky_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s7 vs unified_focal_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s7 vs adaptive_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s7 vs unified_focal_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s7 vs adaptive_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s7 vs dicece_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s7 vs ell_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s7 vs focal_tversky_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s7 vs unified_focal_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s7 vs adaptive_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s7 vs adaptive_s7": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s7 vs dicece_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s7 vs ell_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s7 vs focal_tversky_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s7 vs unified_focal_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s7 vs adaptive_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s7 vs dicece_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s7 vs ell_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s7 vs focal_tversky_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s7 vs unified_focal_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "adaptive_s7 vs adaptive_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s2026 vs ell_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s2026 vs focal_tversky_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s2026 vs unified_focal_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "dicece_s2026 vs adaptive_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s2026 vs focal_tversky_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s2026 vs unified_focal_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "ell_s2026 vs adaptive_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s2026 vs unified_focal_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "focal_tversky_s2026 vs adaptive_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  },
+  "unified_focal_s2026 vs adaptive_s2026": {
+   "n": 2,
+   "note": "n<5 \u2014 statistik test ma'nosiz"
+  }
+ }
+}

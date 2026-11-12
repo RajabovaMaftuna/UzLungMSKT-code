@@ -7,3 +7,6 @@
 | `../seg_training/*/summary.json, config.yaml` | Training summaries and configurations of the saved checkpoints (MSD pre-training, local fine-tuning) |
 
 n = 3 tumour volumes: all local results are descriptive; pairwise tests are not meaningful (n < 5).
+
+| `loss_ablation.json`, `loss_ablation_eval_summary.json` | Loss ablation retrained on 2026-11-12/13: dynamic R²U3D initialised from the MSD checkpoint, five losses × seeds 42, 7, 2026 (`python -m uzlungct.train_seg`), each run evaluated on the local validation set (`uzlungct.evaluate --split val`) and aggregated with `research/segmentation/aggregate_ablation.py` (mean ± SD over seeds) |
+| `../seg_training/abl_retrained/*` | Training summaries and configurations of the 15 retrained ablation runs |

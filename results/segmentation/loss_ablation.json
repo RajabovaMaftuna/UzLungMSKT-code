@@ -1,0 +1,177 @@
+{
+ "model": "r2u3d_dynamic",
+ "init": "MSD Lung checkpoint (seg_training/seg_M3_r2u3d_dynamic_msd)",
+ "split": "val",
+ "seeds": [
+  7,
+  42,
+  2026
+ ],
+ "losses": {
+  "dicece": {
+   "n_seeds": 3,
+   "dice_mean": 0.07173362443594151,
+   "dice_sd": 0.06269309670013092,
+   "hd95_mean": 57.13870777799086,
+   "hd95_sd": 25.085189606827896,
+   "runs": [
+    {
+     "seed": 7,
+     "n_tumour_volumes": 2,
+     "dice_mean": 0.0,
+     "hd95_mean": 81.49245120000086,
+     "lesion_sensitivity": 0.0,
+     "fp_per_scan": 4.4
+    },
+    {
+     "seed": 42,
+     "n_tumour_volumes": 2,
+     "dice_mean": 0.11603487307933144,
+     "hd95_mean": 58.54263588185999,
+     "lesion_sensitivity": 0.5,
+     "fp_per_scan": 3.0
+    },
+    {
+     "seed": 2026,
+     "n_tumour_volumes": 2,
+     "dice_mean": 0.09916600022849309,
+     "hd95_mean": 31.381036252111745,
+     "lesion_sensitivity": 0.5,
+     "fp_per_scan": 3.4
+    }
+   ]
+  },
+  "ell": {
+   "n_seeds": 3,
+   "dice_mean": 0.01723746376824,
+   "dice_sd": 0.015572004704316331,
+   "hd95_mean": 103.97076289060752,
+   "hd95_sd": 49.245930867312715,
+   "runs": [
+    {
+     "seed": 7,
+     "n_tumour_volumes": 2,
+     "dice_mean": 0.030287867192559017,
+     "hd95_mean": 130.04553667038186,
+     "lesion_sensitivity": 0.5,
+     "fp_per_scan": 2.0
+    },
+    {
+     "seed": 42,
+     "n_tumour_volumes": 2,
+     "dice_mean": 0.0,
+     "hd95_mean": 47.16990566028302,
+     "lesion_sensitivity": 0.0,
+     "fp_per_scan": 0.8
+    },
+    {
+     "seed": 2026,
+     "n_tumour_volumes": 2,
+     "dice_mean": 0.021424524112160982,
+     "hd95_mean": 134.69684634115768,
+     "lesion_sensitivity": 0.5,
+     "fp_per_scan": 2.4
+    }
+   ]
+  },
+  "focal_tversky": {
+   "n_seeds": 3,
+   "dice_mean": 0.0321045020460563,
+   "dice_sd": 0.025527329936064713,
+   "hd95_mean": 130.39760897633101,
+   "hd95_sd": 51.09133830178349,
+   "runs": [
+    {
+     "seed": 7,
+     "n_tumour_volumes": 2,
+     "dice_mean": 0.02092096226569361,
+     "hd95_mean": 151.82758896252852,
+     "lesion_sensitivity": 1.0,
+     "fp_per_scan": 10.2
+    },
+    {
+     "seed": 42,
+     "n_tumour_volumes": 2,
+     "dice_mean": 0.014077616128794032,
+     "hd95_mean": 167.28400360396225,
+     "lesion_sensitivity": 0.5,
+     "fp_per_scan": 10.6
+    },
+    {
+     "seed": 2026,
+     "n_tumour_volumes": 2,
+     "dice_mean": 0.06131492774368125,
+     "hd95_mean": 72.08123436250227,
+     "lesion_sensitivity": 0.5,
+     "fp_per_scan": 4.4
+    }
+   ]
+  },
+  "unified_focal": {
+   "n_seeds": 3,
+   "dice_mean": 0.0823361042527991,
+   "dice_sd": 0.11610380054469738,
+   "hd95_mean": 108.29239506120675,
+   "hd95_sd": 74.34327472515723,
+   "runs": [
+    {
+     "seed": 7,
+     "n_tumour_volumes": 2,
+     "dice_mean": 0.03125893623105519,
+     "hd95_mean": 176.7852169767463,
+     "lesion_sensitivity": 0.5,
+     "fp_per_scan": 13.8
+    },
+    {
+     "seed": 42,
+     "n_tumour_volumes": 2,
+     "dice_mean": 0.0005274261603375527,
+     "hd95_mean": 118.86196904625439,
+     "lesion_sensitivity": 0.0,
+     "fp_per_scan": 1.4
+    },
+    {
+     "seed": 2026,
+     "n_tumour_volumes": 2,
+     "dice_mean": 0.21522195036700453,
+     "hd95_mean": 29.229999160619535,
+     "lesion_sensitivity": 0.5,
+     "fp_per_scan": 2.2
+    }
+   ]
+  },
+  "adaptive": {
+   "n_seeds": 3,
+   "dice_mean": 0.04406420653525909,
+   "dice_sd": 0.028374901616312842,
+   "hd95_mean": 45.66147701777386,
+   "hd95_sd": 12.360186617384189,
+   "runs": [
+    {
+     "seed": 7,
+     "n_tumour_volumes": 2,
+     "dice_mean": 0.012347767253044655,
+     "hd95_mean": 59.89031255217815,
+     "lesion_sensitivity": 0.5,
+     "fp_per_scan": 3.6
+    },
+    {
+     "seed": 42,
+     "n_tumour_volumes": 2,
+     "dice_mean": 0.06704181176633381,
+     "hd95_mean": 37.5830090870851,
+     "lesion_sensitivity": 0.5,
+     "fp_per_scan": 1.4
+    },
+    {
+     "seed": 2026,
+     "n_tumour_volumes": 2,
+     "dice_mean": 0.05280304058639881,
+     "hd95_mean": 39.51110941405834,
+     "lesion_sensitivity": 0.5,
+     "fp_per_scan": 1.4
+    }
+   ]
+  }
+ }
+}
