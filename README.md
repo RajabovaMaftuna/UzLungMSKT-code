@@ -15,6 +15,7 @@ and the related journal manuscripts on SenGuard-3D and the «UzLungMSKT» softwa
 | `n8_runner.py`, `n8fusion.py`, `tsfusion.py` | SenGuard-3D inference: union of two nnU-Net v2 models, TotalSegmentator `lung_nodules` and a MONAI 3D RetinaNet (internal identifier N8) |
 | `research/ltt/` | Learn-then-Test certification (`s10_eval.py`, `s7a_def_T.py`) and the reproducible certificate-violation simulation (`sim_ltt_v2.py`, seed 20261112, with its output `sim_ltt_v2.json`) |
 | `results/` | Frozen parameters, NLSTseg patient-level split (`splits_v9_nlst.json`), per-patient evaluations on NLSTseg V/C/X and FDG-PET-CT-Lesions C, certificate result (`S10_natija.json`), CPU–GPU equivalence (`31_natija.json`), component hash registry (`senguard3d_registry.json`) |
+| `results/local_anonymised/` | Anonymised aggregate tables of the local clinical dataset: volumes and quality control, radiologist-confirmed reference lesions, SenGuard-3D local audit |
 | `docs/` | Model card (`22_SenGuard3D_model_kartasi.md`), final scientific report, certification method notes, CPU–GPU and clean-install test reports (in Uzbek) |
 | `packaging/` | Windows build, installer and release-test scripts |
 | `tools/gpu_opt/` | GPU/CPU adaptation and equivalence scripts |
@@ -37,7 +38,7 @@ The certificate holds only for the screening-CT domain (NLSTseg). There is no ce
 
 * NLSTseg — Chen et al., 2025, *Scientific Data* 12, 1475, https://doi.org/10.1038/s41597-025-05742-x; data: https://doi.org/10.5281/zenodo.14838349 (CC BY 4.0).
 * FDG-PET-CT-Lesions — Gatidis et al., 2022, *Scientific Data* 9, 601.
-* Local clinical images (Republican Specialised Scientific and Practical Medical Centre of Oncology and Radiology; ethics committee protocol No. 58 of 26 May 2025) are confidential and are not part of this repository.
+* Local clinical images (Republican Specialised Scientific and Practical Medical Centre of Oncology and Radiology; ethics committee protocol No. 58 of 26 May 2025) are confidential; the images are not part of this repository. Anonymised aggregate results (no images, names, dates or UIDs) are in `results/local_anonymised/`.
 
 ## Requirements
 

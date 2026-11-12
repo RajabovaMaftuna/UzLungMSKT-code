@@ -1,0 +1,12 @@
+set,patient_code,exam,modality,reference_lung_lesions,detected,patient_loss_L
+audit,LC005,E3,PET/CT (CT part),0,0,
+audit,LC007,E2,PET/CT (CT part),1,1,0
+audit,LC012,E1,PET/CT (CT part),1,1,0
+audit,LC014,E1,PET/CT (CT part),1,1,0
+audit,LC018,E1,PET/CT (CT part),1,1,0
+audit,LC021,E2,PET/CT (CT part),2,2,0
+audit,LC023,E1,PET/CT (CT part),0,0,
+audit,LC024,E1,PET/CT (CT part),1,1,0
+closed test,LC006,E2,CT,1,1,0
+closed test,LC010,E1,PET/CT (CT part),1,1,0
+closed test,LC011,E1,PET/CT (CT part),1,1,0
