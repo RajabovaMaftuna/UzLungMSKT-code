@@ -489,6 +489,19 @@ def _ts_fn():
     return make_ts_fn()
 
 
+def _n_slices(image):
+    """Hajmdagi aksial kesimlar soni (fayl yo'li yoki SimpleITK tasviri); aniqlab bo'lmasa None."""
+    import SimpleITK as sitk
+    try:
+        if isinstance(image, (str, Path)):
+            r = sitk.ImageFileReader(); r.SetFileName(str(image)); r.ReadImageInformation(); sz = r.GetSize()
+        else:
+            sz = image.GetSize()
+        return int(sz[2]) if len(sz) > 2 else 1
+    except Exception:
+        return None
+
+
 def _analyze(case_dir: Path, image, ckpt: str, gt: str | None, input_meta: dict | None = None):
     import SimpleITK as sitk
     from ..sio import read_image, write_image
@@ -496,6 +509,8 @@ def _analyze(case_dir: Path, image, ckpt: str, gt: str | None, input_meta: dict 
     from ..infer import analyze_image, load_model
     t0 = time.time()
     input_meta = input_meta or {"source": "volume", "calibrated": True, "warnings": []}
+    if (_n_slices(image) or 2) < 2:      # bitta kesim: SenGuard-3D (3D ansambl) uni qabul qilmaydi -> tushunarli xabar
+        raise RuntimeError("single_slice")
     note = None
     try:
         try:

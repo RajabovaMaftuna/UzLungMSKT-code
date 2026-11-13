@@ -266,7 +266,8 @@ def load_any(paths, workdir: Path, _depth=0):
         img = read_image(paths[0])
         if img.GetDimension() != 3:
             raise ValueError("not_3d")
-        return img, {"source": "volume", "calibrated": True, "n_slices": img.GetSize()[2], "warnings": []}
+        return img, {"source": "volume", "calibrated": True, "n_slices": img.GetSize()[2],
+                     "warnings": ["too_few_slices"] if img.GetSize()[2] < 16 else []}
     if exts <= set(VIDEO_EXT) and len(paths) == 1:
         return _read_video(paths[0])
     if exts <= set(PDF_EXT) and len(paths) == 1:
