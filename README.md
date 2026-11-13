@@ -18,7 +18,7 @@ and the related journal manuscripts on SenGuard-3D and the «UzLungMSKT» softwa
 | `results/local_anonymised/` | Anonymised aggregate tables of the local clinical dataset: volumes and quality control, radiologist-confirmed reference lesions, SenGuard-3D local audit |
 | `results/cls_K3/` | Nodule malignancy classifier (configuration 3): out-of-fold metrics and temperature-scaling calibration |
 | `results/seg_training/` | Training summaries and configurations of the segmentation models (3D U-Net, R²U3D static/dynamic, 3D-Res2UNet, UNETR, Swin UNETR; MSD and local fine-tuning; loss ablation runs) |
-| `results/test_logs/` | Release-bot log (build 6, tests 1–9, 23 automated tests) and clean-install log (T1–T8) |
+| `results/test_logs/` | Release-bot log (build 6, tests 1–9, 23 automated tests), clean-install log (T1–T8) and per-format reading/analysis times (`format_timing.json`, `research/software/format_timing.py`; single-slice inputs are not analysable by the 3D ensemble) |
 | `docs/` | Model card (`22_SenGuard3D_model_kartasi.md`), final scientific report, certification method notes, CPU–GPU and clean-install test reports (in Uzbek) |
 | `packaging/` | Windows build, installer and release-test scripts |
 | `tools/gpu_opt/` | GPU/CPU adaptation and equivalence scripts |
@@ -34,6 +34,7 @@ in `results/senguard3d_registry.json`; the Windows installer (build 6) is distri
 | NLSTseg, S2 subgroup, ≥ 95 % claim | 135 | 3 | not certified (p = 0.090) |
 | FDG-PET-CT-Lesions, CT part (C) | 81 | 27 (33.3 %), upper bound 42.9 % | no certificate |
 | Local clinical CT | 6 + 3 | 0 | descriptive only (n < 59) |
+| Local clinical CT, all 30 volumes through the platform | 9 with a confirmed tumour | 0 (9/9 detected; lower bound 71.7 %) | descriptive only (n < 59) |
 
 The certificate holds only for the screening-CT domain (NLSTseg). There is no certificate for PET/CT or for local data.
 

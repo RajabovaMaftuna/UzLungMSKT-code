@@ -1,0 +1,52 @@
+{
+ "case": "NLSTseg 104363 (public)",
+ "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+ "platform": "UzLungMSKT 2026-11-04 SenGuard-3D v1.0.1 (build 6)",
+ "formats": {
+  "NIfTI": {
+   "file_mb": 41.99,
+   "load_s": 0.23,
+   "slices": 135,
+   "calibrated": true,
+   "source": "volume",
+   "analysis_s": 175.5,
+   "analysis_ok": true
+  },
+  "DICOM": {
+   "file_mb": 0.5,
+   "load_s": 0.02,
+   "slices": 1,
+   "calibrated": true,
+   "source": "dicom",
+   "analysis_s": 9.9,
+   "analysis_ok": false
+  },
+  "PNG": {
+   "file_mb": 0.11,
+   "load_s": 0.01,
+   "slices": 1,
+   "calibrated": false,
+   "source": "image",
+   "analysis_s": 9.9,
+   "analysis_ok": false
+  },
+  "MP4": {
+   "file_mb": 0.8,
+   "load_s": 0.16,
+   "slices": 40,
+   "calibrated": false,
+   "source": "video",
+   "analysis_s": 75.8,
+   "analysis_ok": true
+  },
+  "PDF": {
+   "file_mb": 0.14,
+   "load_s": 0.07,
+   "slices": 1,
+   "calibrated": false,
+   "source": "pdf",
+   "analysis_s": 10.1,
+   "analysis_ok": false
+  }
+ }
+}

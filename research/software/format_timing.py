@@ -39,13 +39,14 @@ files['PDF'] = W / 'sahifa.pdf'; pdf.output(str(files['PDF']))
 res = {}
 env = {k: v for k, v in os.environ.items() if not k.startswith('PYTHON')}
 for name, f in files.items():
+    mb = round(f.stat().st_size / 2**20, 2)                 # hajm yuklashdan OLDIN (load_any vaqtinchalik fayllarni tozalaydi)
     t0 = time.perf_counter(); img, meta = load_any([f], W / f'dec_{name}'); t_load = time.perf_counter() - t0
     vol = W / f'in_{name}.nii.gz'; sitk.WriteImage(img, str(vol))
     out = W / f'n8_{name}'; shutil.rmtree(out, ignore_errors=True)
     t0 = time.perf_counter()
     r = subprocess.run([str(STAGE / 'python' / 'python.exe'), '-E', '-s', str(STAGE / 'n8_runner.py'), str(vol), str(out)], env=env, capture_output=True, text=True)
     t_an = time.perf_counter() - t0
-    res[name] = {'file_mb': round(f.stat().st_size / 2**20, 2), 'load_s': round(t_load, 2), 'slices': img.GetSize()[2],
+    res[name] = {'file_mb': mb, 'load_s': round(t_load, 2), 'slices': img.GetSize()[2],
                  'calibrated': bool(meta.get('calibrated', True)), 'source': meta.get('source'), 'analysis_s': round(t_an, 1),
                  'analysis_ok': r.returncode == 0}
     print(name, res[name], flush=True)
